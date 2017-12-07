@@ -1,0 +1,156 @@
+/* site wide classes
+-------------------------------------------------------------------*/
+.flex-center { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; justify-content: center; -webkit-justify-content: center; }
+
+
+/* big city spacers
+-------------------------------------------------------------------*/
+.pb-10 { padding-bottom: 10px; }
+.pb-20 { padding-bottom: 20px; }
+.pb-30 { padding-bottom: 30px; }
+.pb-40 { padding-bottom: 40px; }
+.pb-60 { padding-bottom: 40px; }
+.pb-80 { padding-bottom: 50px; }
+
+.pt-10 { padding-top: 10px; }
+.pt-20 { padding-top: 20px; }
+.pt-30 { padding-top: 30px; }
+.pt-40 { padding-top: 40px; }
+.pt-60 { padding-top: 40px; }
+.pt-80 { padding-top: 50px; }
+
+.py-10 { padding-top: 10px; padding-bottom: 10px; }
+.py-20 { padding-top: 20px; padding-bottom: 20px; }
+.py-30 { padding-top: 30px; padding-bottom: 30px; }
+.py-40 { padding-top: 40px; padding-bottom: 40px; }
+.py-60 { padding-top: 40px; padding-bottom: 40px; }
+.py-80 { padding-top: 50px; padding-bottom: 50px; }
+
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-60 { margin-bottom: 40px; }
+.mb-80 { margin-bottom: 50px; }
+
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-60 { margin-top: 40px; }
+.mt-80 { margin-top: 50px; }
+
+.my-10 { margin-top: 10px; margin-bottom: 10px; }
+.my-20 { margin-top: 20px; margin-bottom: 20px; }
+.my-30 { margin-top: 30px; margin-bottom: 30px; }
+.my-40 { margin-top: 40px; margin-bottom: 40px; }
+.my-60 { margin-top: 40px; margin-bottom: 40px; }
+.my-80 { margin-top: 50px; margin-bottom: 50px; }
+
+@media screen and (min-width: 768px) {
+	.pb-60 { padding-bottom: 60px; }
+	.pb-80 { padding-bottom: 80px; }
+
+	.pt-60 { padding-top: 60px; }
+	.pt-80 { padding-top: 80px; }
+
+	.py-60 { padding-top: 60px; padding-bottom: 60px; }
+	.py-80 { padding-top: 80px; padding-bottom: 80px; }
+
+	.mb-60 { margin-bottom: 60px; }
+	.mb-80 { margin-bottom: 80px; }
+
+	.mt-60 { margin-top: 60px; }
+	.mt-80 { margin-top: 80px; }
+
+	.my-60 { margin-top: 60px; margin-bottom: 60px; }
+	.my-80 { margin-top: 80px; margin-bottom: 80px; }
+}
+
+
+
+/* bootstrap global overrides
+-------------------------------------------------------------------*/
+/*
+html { font-size: inherit; }
+body { font-size: inherit; background-color: transparent; }
+a:focus, a:active { text-decoration: none; }
+*/
+
+
+/* mobile nav
+-------------------------------------------------------------------*/
+/*
+.mobile-nav { background-color: rgba(35,35,35,.9); width: 300px; right: -300px; position: fixed; top: 0; z-index: 1000; height: 100%; padding: 0 20px; overflow: auto; }
+.mobile-nav .close a { font-size: 3em; color: #fff; padding-right: 10px; display: block; text-align: right; }
+.mobile-nav .close a:hover { text-decoration: none; opacity: .6; }
+.mobile-nav ul { margin-bottom: 20px; list-style-type: none; padding: 0; }
+.mobile-nav ul ul { list-style-type: none; }
+.mobile-nav ul ul li a { padding: 10px 0 10px 20px; }
+.mobile-nav ul ul ul li a { padding: 10px 0 10px 40px; }
+.mobile-nav ul.menu ul li a:before { content: "\f105"; font-family: FontAwesome; margin-right: 10px; color: #999; }
+.mobile-nav ul#menu-primary > li { font-size: 1.5em; }
+.mobile-nav ul li,
+.mobile-nav ul li.menu-item-has-children > a { border-bottom: 1px solid #333; }
+.mobile-nav ul li.last,
+.mobile-nav ul li.menu-item-has-children { border-bottom: none; }
+.mobile-nav ul li a { color: #fff; display: block; padding: 15px 0 15px 10px; font-size: 1.5em; }
+.mobile-nav ul li a:hover { background-color: rgba(85,85,85, .7); text-decoration: none; }
+.mobile-nav form input { font-size: 1.3em; padding: 8px 10px; width: 100%; border: none; }
+.admin-bar .mobile-nav { top: 32px; }
+@media screen and (min-width: 992px) { .mobile-nav { display: none; } }
+*/
+
+
+/* bootstrap nav overrides
+-------------------------------------------------------------------*/
+
+/* mobile button */
+/*
+.navbar .navbar-toggle { border: none; padding: 0; }
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus { background: transparent; }
+.navbar .navbar-toggle .icon-bar { background-color: #000; }
+.navbar-toggle .icon-bar { width: 30px; margin: 6px 0; }
+
+.dropdown-menu { background-color: #222; border: none; padding: 0; }
+.dropdown-menu li a { color: #fff; padding: 10px 5px 10px 10px; }
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus { background-color: transparent; color: #ddd; }
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus { background-color: rgba(0,0,0,.2); color: #fff; }
+
+.navbar { min-height: inherit; margin-bottom: 0; border: none; border-radius: inherit; }
+.nav > li > a:hover, .nav > li > a:focus { background-color: transparent; }
+*/
+
+/* makes nav work on hover for desktop, click for tablets */
+/*
+@media only screen and (min-width:992px) {
+	.dropdown:hover .dropdown-menu { display: block; }
+}
+@media screen and (max-width: 991px) {
+	.navbar-collapse.collapse { display: none !important; }
+}
+*/
+
+
+/* error for landscape users
+-------------------------------------------------------------------*/
+/*
+.overlay-landscape { display: none; }
+
+@media screen and (max-width: 700px) and (orientation: landscape){
+	.overlay-landscape {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 99999;
+	    width: 100%;
+	    height: 100%;
+	    display: block;
+	    background: #fff url(../images/rotate-phone.svg) center center no-repeat;
+	}
+}
+*/

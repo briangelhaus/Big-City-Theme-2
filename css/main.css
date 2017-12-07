@@ -1,0 +1,49 @@
+/*
+	primary color - #08c
+	secondary color -
+*/
+
+/* Type
+-------------------------------------------------------------------*/
+.btn .fa { margin-left: 5px; }
+
+/*
+.navbar { clear: both; float: right; }
+header.main { padding: 20px 0; }
+header.main .logo { float: left; transition: all .2s ease-in; -webkit-transition: all .2s ease-in; }
+header.main .logo a { display: block; }
+header.main .logo img { max-width: 100%; }
+
+header.main .header-right { float: right; }
+header.main .header-right .top-content { float: right; margin: 15px 0 25px 0; }
+*/
+
+
+
+
+
+header.main ul.nav li a { font-size: 16px; color: #333; padding: 5px 10px; }
+
+header.main ul.nav > li > a:hover,
+header.main ul.nav > li > a:focus,
+header.main ul.nav > li.active > a,
+header.main ul.nav > li.active > a:hover,
+header.main ul.nav > li.active > a:focus,
+header.main ul.nav > li.open > a,
+header.main ul.nav > li.open > a:hover,
+header.main ul.nav > li.open > a:focus { text-decoration: none; color: #08c; }
+
+
+/* Home
+-------------------------------------------------------------------*/
+.home section { position: relative; }
+.home .hero .hero-content { width: 400px; text-align: center; position: relative; z-index: 15; }
+.home .hero .hero-content .title { color: #fff; margin-bottom: 30px; }
+.home .hero-bg { background-position: center center; background-size: cover; min-height: 600px; }
+
+.overlay { background-color: rgba(0,0,0,.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; }
+
+
+
+/* Footer
+-------------------------------------------------------------------*/

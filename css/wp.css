@@ -1,0 +1,208 @@
+/* wysiwyg editor frontend
+-------------------------------------------------------------------*/
+.alignright { text-align: right; float: right; margin: 10px 0 0 20px; }
+.alignleft { text-align: left; float: left; margin: 10px 20px 0 0; }
+.aligncenter { text-align: center; margin: 0 auto; display: block; }
+blockquote { border-left: 5px solid #ccc; padding-left: 10px; }
+blockquote p { color: #666; font-size: 2em; font-style: italic; }
+
+.gallery .gallery-item img { max-width: 100%; height: auto; margin: 0 auto; border: none !important; padding: 0 10px; }
+.gallery .gallery-item a:hover img,
+.wp-caption a:hover img { opacity: .8; }
+.gallery .gallery-item .gallery-caption { font-size: .9em; margin-top: 2px; }
+@media screen and (max-width: 600px) {
+	.gallery .gallery-item img { padding: 0; }
+	.gallery .gallery-item { float: none !important; clear: both; width: 100% !important; }
+}
+.wp-caption { max-width: 100% !important; text-align: center; }
+.wp-caption img { margin-bottom: 0 !important; }
+.wp-caption p { font-size: 1.4em; }
+
+/* wysiwyg admin backend - turn this on in functions.php
+-------------------------------------------------------------------*/
+/*
+body.mce-content-body iframe { width: 100%; min-height: 400px; }
+body.mce-content-body { font-family: Helvetica, Arial; }
+*/
+
+
+/* woocommerce
+-------------------------------------------------------------------*/
+/* buttons */
+/*
+.woocommerce-page #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce button.button.alt.disabled { background-color: #222; color: #fff; font-size: 1.5em; }
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled]:hover { background-color: #0078b5; color: #fff; }
+
+.woocommerce p .button,
+.woocommerce table .button { font-size: 1em; }
+.woocommerce-page a.button.checkout-button,
+.woocommerce-page input#place_order { font-size: 1.8em; padding: 16px; }
+
+.woocommerce-page .woocommerce-message,
+.woocommerce-page .woocommerce-info { font-size: 1.5em; }
+.woocommerce-page .woocommerce-error a,
+.woocommerce-page .woocommerce-message a.button { font-size: 1em; }
+.woocommerce-page .added_to_cart { font-size: 1.5em; margin-left: 5px; }
+.woocommerce-page .product-container { margin-top: 30px; }
+.woocommerce-page .woocommerce-ordering,
+.woocommerce-page .order_details,
+.woocommerce table.my_account_orders { font-size: 1.5em; }
+.woocommerce .variations { margin-bottom: 10px; }
+.woocommerce .variations label { display: block; margin-right: 10px; }
+.woocommerce .variations .value a { margin-left: 10px; }
+
+.woocommerce-page .products a:hover img { opacity: .7; }
+.woocommerce-page .woocommerce-breadcrumb { font-size: 1.3em; margin-bottom: 20px; }
+.woocommerce ul.products li.product a img { width: auto; margin: 0 auto 10px auto; }
+.woocommerce-page ul.products li.product .price,
+.woocommerce-page div.product p.price,
+.woocommerce-page div.product span.price { font-size: 2em; margin-bottom: 10px; display: block; }
+.woocommerce-page.single-product .product-image { text-align: center; }
+.woocommerce-page.single-product .related-products { margin-top: 50px; }
+.woocommerce-page.single-product .related-products .product a { display: block; }
+.woocommerce-page.single-product .related-products .product a:hover { text-decoration: none; }
+.woocommerce-page.single-product .related-products .product h2 { margin: 10px 0; }
+.woocommerce-page.single-product .quantity .qty { font-size: 1.5em; padding: 5px 0; -webkit-border-radius: 4px; border-radius: 4px; border: 1px solid #bbb; }
+.woocommerce-page table { font-size: 1.5em; }
+.woocommerce-page table p,
+.woocommerce-page table li,
+.woocommerce-page table dl,
+.woocommerce-page table select { font-size: 1em; }
+.woocommerce-page input,
+.woocommerce-page textarea { padding: 5px; -webkit-border-radius: 2px; border-radius: 2px; border: 1px solid #ccc; }
+.woocommerce-page table.cart td.actions { padding: 15px; }
+.woocommerce-page address,
+.woocommerce-page .address a { font-size: 1.5em; }
+.woocommerce-page .address { padding: 20px; background-color: #eee; }
+
+.woocommerce-cart .cart-collaterals .cart_totals table th { width: 40%; }
+.woocommerce-cart table.cart img { width: 110px; }
+.woocommerce-cart td.product-name dl.variation dd { margin: 0; }
+
+.woocommerce-checkout #customer_details { margin-bottom: 20px; }
+.woocommerce-checkout #payment div.payment_box { background: #fff; }
+.woocommerce-checkout #payment div.payment_box:before { border: 1em solid #fff; border-right-color: transparent; border-left-color: transparent; border-top-color: transparent; }
+.woocommerce-checkout #payment ul.payment_methods li img { margin: 0 10px; }
+.woocommerce-checkout #payment .terms { margin-top: 10px; display: inline-block; float: right; }
+
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text { width: auto; }
+.woocommerce form .form-row.woocommerce-validated input.input-text { border: 1px solid #ccc; }
+.woocommerce form .form-row.woocommerce-validated select { border: none; }
+div.pp_woocommerce .pp_close { font-size: 3em; }
+*/
+
+
+/* ninja forms
+-------------------------------------------------------------------*/
+.nf-form-cont { font-size: 1.5em; }
+.nf-form-cont p { font-size: 1em; }
+.nf-form-cont input,
+.nf-form-cont select,
+.nf-form-cont textarea { border: 1px solid #ccc; -webkit-border-radius: 4px; border-radius: 4px; padding: 2px 5px; color: #555; background-color: #fff; }
+.nf-form-cont select { height: 28px; }
+.nf-form-cont label { color: #555; }
+.nf-form-cont .submit-container input { background-color: #000; color: #fff; -webkit-border-radius: 4px; border-radius: 4px; border: none; padding: 10px 20px; }
+.nf-form-cont .submit-container input:hover { background-color: #333; }
+.nf-form-cont textarea { height: 80px !important; margin-right: 2%; width: 100% !important; }
+.nf-field-container, #ninja_forms_required_items { margin-bottom: 15px !important; }
+.nf-response-msg p { color: green; font-size: 1.3em; }
+
+/* use the 2.9 version of ninja form
+
+form.ninja-forms-form { font-size: 1.5em; }
+form.ninja-forms-form li,
+form.ninja-forms-form p { font-size: 1em; }
+form.ninja-forms-form input[type="text"],
+form.ninja-forms-form select,
+form.ninja-forms-form textarea { border: 1px solid #ccc; -webkit-border-radius: 4px; border-radius: 4px; padding: 2px 5px; color: #555; }
+form.ninja-forms-form select { height: 28px; }
+form.ninja-forms-form label { color: #555; }
+form.ninja-forms-form .label-left label { float: left; display: block; width: 125px; }
+form.ninja-forms-form input[type='submit'] { background-color: #000; color: #fff; -webkit-border-radius: 4px; border-radius: 4px; border: none; padding: 10px 20px; }
+form.ninja-forms-form input[type='submit']:hover { background-color: #333; }
+form.ninja-forms-form textarea { height: 80px !important; }
+form.ninja-forms-form .ninja-forms-required-items { display: none; }
+form.ninja-forms-form .field-wrap button { font-size: 1em !important; }
+form.ninja-forms-form .field-wrap.label-left .ninja-forms-field, .field-wrap.label-left .ninja-forms-star-rating-control { margin-left: 0 !important; }
+form.ninja-forms-form .field-wrap, #ninja_forms_required_items { margin-bottom: 10px !important; }
+
+form.ninja-forms-form .ninja-forms-success-msg { color: green; }
+div.ninja-forms-response-msg { font-size: 1.5em; margin-bottom: 10px; color: red; }
+form.ninja-forms-form .ninja-forms-error input,
+form.ninja-forms-form .ninja-forms-error select,
+form.ninja-forms-form .ninja-forms-error textarea { border: 1px solid red; }
+.ninja-forms-field-error p { color: red; }
+
+@media screen and (min-width: 600px) {
+	form.ninja-forms-form .list-dropdown-wrap,
+	form.ninja-forms-form .text-wrap,
+	form.ninja-forms-form .country-wrap { width: 48%; float: left; margin-right: 2%; height: 60px; }
+	form.ninja-forms-form .textarea-wrap { clear: both; }
+}
+*/
+
+
+/* contact form 7
+-------------------------------------------------------------------*/
+/*
+form.wpcf7-form { font-size: 1.5em; max-width: 600px; }
+form.wpcf7-form h3 { font-size: 1em; margin-top: 20px }
+form.wpcf7-form .field { margin-bottom: 10px; }
+form.wpcf7-form li { font-size: 1em; }
+form.wpcf7-form input,
+form.wpcf7-form select,
+form.wpcf7-form textarea { border: 1px solid #ccc; -webkit-border-radius: 4px; border-radius: 4px; padding: 2px 5px; color: #555; background-color: #fff; width: 100%; }
+form.wpcf7-form select { height: 28px; }
+form.wpcf7-form label { color: #555; }
+form.wpcf7-form .label-left label { float: left; display: block; width: 125px; }
+form.wpcf7-form input[type='submit'] { background-color: #000; color: #fff; -webkit-border-radius: 4px; border-radius: 4px; border: none; padding: 10px 20px; margin-top: 10px; width: auto; }
+form.wpcf7-form input[type='submit']:hover { background-color: #333; }
+form.wpcf7-form textarea { height: 80px !important; }
+form.wpcf7-form input[type='checkbox'] { width: 20px; float: left; margin-top: 6px; }
+span.wpcf7-list-item { margin: 0 10px 0 0; }
+*/
+
+/*
+	-------------------
+	contact form 7 html
+	-------------------
+
+<div class="row">
+	<div class="col-sm-6 field">
+		<label>Full Name *</label>
+		[text* fullName]
+	</div><!-- /col -->
+	<div class="col-sm-6 field">
+		<label>Email *</label>
+		[email* email]
+	</div><!-- /col -->
+</div><!-- /row -->
+
+<div class="row">
+	<div class="col-sm-12 field">
+		<label>Message</label>
+		[textarea* Message]
+	</div><!-- /col -->
+</div><!-- /row -->
+
+<div class="row">
+	<div class="col-sm-12 field">
+	  <label>Upload File (5MB Limit)</label>
+	  [file UploadFile limit:5mb]
+	</div>
+</div><!-- /row -->
+
+<div class="row">
+	<div class="col-sm-12 field">
+		  [submit "Send"]
+	</div><!-- /col -->
+</div><!-- /row -->
+*/
+
+
+/*
+	You may need this for wp-config...
+	// remove <p> and <br> from contact 7 forms
+	// http://stackoverflow.com/questions/32539905/contact-form-7-auto-added-p-tags
+	define( 'WPCF7_AUTOP', false );
+*/
