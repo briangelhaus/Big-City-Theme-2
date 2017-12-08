@@ -62,6 +62,13 @@ if(is_shop()){
 }
 
 get_header( 'shop' ); ?>
+		
+<?php include($_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/bigcity2/includes/banner.php'); ?>
+
+<div class="page-content">
+	<div class="container">
+		
+	<?php wc_print_notices(); ?>
 
 	<?php
 		/**
@@ -87,7 +94,7 @@ get_header( 'shop' ); ?>
 			<h1><?php echo woocommerce_page_title(); ?></h1>
 		<?php endif; ?>
 
-		<?php //woocommerce_breadcrumb(); ?>
+		<?php woocommerce_breadcrumb(); ?>
 
 		<div class="main-content description">
 			<?php do_action( 'woocommerce_archive_description' ); ?>
@@ -117,7 +124,7 @@ get_header( 'shop' ); ?>
 						<?php endif; ?>
 					</div><!-- /no image -->
 					<h2 class="product-title"><?php echo get_the_title($pid); ?></h2>
-					<span class="p product-price"><?php echo $price[0]; ?></span>
+					<span class="p product-price">$<?php echo $price[0]; ?></span>
 				</a>
 			</div><!-- /col product -->
 
@@ -151,5 +158,8 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
+	
+	</div><!-- /container -->
+</div><!-- /page content -->
 
 <?php get_footer( 'shop' ); ?>

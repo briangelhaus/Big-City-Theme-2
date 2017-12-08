@@ -6,14 +6,16 @@ $(function(){
 
 	// mobile nav trigger
 	var mobileNav = $('.mobile-nav');
+	
 	// mobile nav open
-	$('.navbar-toggle').on('click', function(){
+	$('.navbar-toggler').on('click', function(){
+		mobileNav.show();
 		mobileNav.animate({right: 0},250);
 		return false;
 	});
 	// mobile nav close
-	$('.mobile-nav .close a').on('click', function(){
-		mobileNav.animate({right: '-'+mobileNav.outerWidth()},250);
+	$('.mobile-nav a.mobile-close').on('click', function(){
+		mobileNav.animate({right: '-100%'},250);
 		return false;
 	});
 

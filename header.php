@@ -33,27 +33,28 @@
 
 <!-- <div class="overlay-landscape"></div> -->
 
-<?php /*
-	<div class="mobile-nav">
-	<div class="close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
-	<ul class="menu">
-		<?php
-			wp_nav_menu( array(
-				'menu'       => 'primary',
-				'container'  => false,
-				'items_wrap' => '%3$s',
-			));
-		?>
-	</ul>
-	<form action="/" method="get">
-		<input type="text" name="s" id="search" placeholder="Search for a Product..." value="<?php the_search_query(); ?>" />
-	</form>	
-	<form class="form-inline my-2 my-lg-0">
-		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	</form>
+<div class="mobile-nav">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="#" class="mobile-close" aria-label="Close">&times;</a>
+				<ul class="menu">
+					<?php
+						wp_nav_menu( array(
+							'menu'       => 'primary',
+							'container'  => false,
+							'items_wrap' => '%3$s',
+						));
+					?>
+				</ul>
+				<form class="form-inline" action="/" method="get">
+					<input class="form-control" type="text" name="s" id="search" placeholder="Search for a Product..." value="<?php the_search_query(); ?>" />
+				</form>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
 </div><!-- /mobile-nav -->
-*/ ?>
+
 
 <header class="main">
 	<div class="container">
@@ -64,12 +65,11 @@
 			</div><!-- /logo -->
 
 			<nav class="navbar navbar-expand-lg ml-auto navbar-light">
-			
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 			
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
 						<?php
 							wp_nav_menu( [
@@ -81,6 +81,11 @@
 								'walker'          => new WP_Bootstrap_Navwalker()
 							] );
 						?>
+						<?php  						
+							global $woocommerce;
+							$count = $woocommerce->cart->get_cart_contents_count();
+						?>
+						<li><a class="view-cart" href="/cart">Cart (<?php echo $count; ?>)</a></li>
 					</ul>
 				</div><!-- /nav collapse -->
 			</nav>

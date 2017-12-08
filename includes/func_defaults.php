@@ -120,7 +120,7 @@ add_filter( 'auto_update_theme', '__return_true' ); // enable updates for themes
 
 // add the class img-responsive to all images when added to the wysiwyg editor
 function add_image_class($class){
-    $class .= ' img-responsive';
+    $class .= ' img-fluid';
     return $class;
 }
 add_filter('get_image_tag_class','add_image_class');

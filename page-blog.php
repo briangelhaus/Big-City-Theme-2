@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<div class="main-container">
+<?php include('includes/banner.php'); ?>
+
+<div class="page-content">
 	<div class="container">
 
 		<div class="row">
@@ -84,6 +86,6 @@
 		</div><!-- /row -->
 
 	</div><!-- /container -->
-</div><!-- /main container -->
+</div><!-- /page content -->
 
 <?php get_footer(); ?>

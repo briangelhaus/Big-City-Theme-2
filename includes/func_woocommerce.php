@@ -2,15 +2,12 @@
 add_action('woocommerce_before_main_content', 'bigcity_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'bigcity_wrapper_end', 10);
 
-function bigcity_wrapper_start() {
-  echo '<div class="main-container">
-  			<div class="container">';
-}
+function bigcity_wrapper_start() { echo ''; }
+function bigcity_wrapper_end() { echo ''; }
 
-function bigcity_wrapper_end() {
-  echo '</div><!-- /container -->
-  </div><!-- /main container -->';
-}
+// hide notices like add to cart so we can display them where we want
+remove_action( 'woocommerce_before_shop_loop', 'wc_print_notices', 10 ); /*Archive Product*/
+remove_action( 'woocommerce_before_single_product', 'wc_print_notices', 10 ); /*Single Product*/
 
 add_action( 'after_setup_theme', 'bigcity_woocommerce_support' );
 function bigcity_woocommerce_support() {
@@ -39,7 +36,7 @@ function bigcity_woocommerce_breadcrumbs() {
 // change home url for woo breadcrumb
 add_filter( 'woocommerce_breadcrumb_home_url', 'bigcity_custom_breadrumb_home_url' );
 function bigcity_custom_breadrumb_home_url() {
-    return '/products';
+    return '/shop';
 }
 
 // remove crowded columns from product list in admin

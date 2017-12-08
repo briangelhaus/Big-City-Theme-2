@@ -22,7 +22,7 @@ header.main .header-right .top-content { float: right; margin: 15px 0 25px 0; }
 
 
 
-header.main ul.nav li a { font-size: 16px; color: #333; padding: 5px 10px; }
+header.main ul.nav li a { font-size: 16px; color: #333; padding: 10px; }
 
 header.main ul.nav > li > a:hover,
 header.main ul.nav > li > a:focus,
@@ -32,6 +32,11 @@ header.main ul.nav > li.active > a:focus,
 header.main ul.nav > li.open > a,
 header.main ul.nav > li.open > a:hover,
 header.main ul.nav > li.open > a:focus { text-decoration: none; color: #08c; }
+
+
+/* Template
+-------------------------------------------------------------------*/
+.page-content { margin: 40px 0; }
 
 
 /* Home
@@ -47,3 +52,7 @@ header.main ul.nav > li.open > a:focus { text-decoration: none; color: #08c; }
 
 /* Footer
 -------------------------------------------------------------------*/
+footer.main { background: #333; }
+footer.main * { color: #fff; }
+footer.main .contact .fa { font-size: 22px; }
+footer.main .copyright a { text-decoration: underline; }
