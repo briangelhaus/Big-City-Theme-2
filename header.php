@@ -27,11 +27,8 @@
 	<?php //include('includes/google_map.php'); ?>
 	<?php //include('includes/local_business.php'); ?>
 	
-	
 </head>
 <body <?php body_class(); ?>>
-
-<!-- <div class="overlay-landscape"></div> -->
 
 <div class="mobile-nav">
 	<div class="container">
@@ -55,40 +52,48 @@
 	</div><!-- /container -->
 </div><!-- /mobile-nav -->
 
-
 <header class="main">
 	<div class="container">
 		
 		<div class="flex-nav d-flex">
 			<div class="logo">
-				<a href="<?php echo home_url(); ?>"><img src="http://placehold.it/150x100" alt="<?php bloginfo( 'name' ); ?>" /></a>
+				<a href="<?php echo home_url(); ?>"><img src="//placehold.it/300x200" alt="<?php bloginfo( 'name' ); ?>" /></a>
 			</div><!-- /logo -->
-
-			<nav class="navbar navbar-expand-lg ml-auto navbar-light">
-				<button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
 			
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<?php
-							wp_nav_menu( [
-								'menu'            => 'primary',
-								'depth'           => 2,
-								'container'       => false,
-								'items_wrap'      => '%3$s',
-								'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-								'walker'          => new WP_Bootstrap_Navwalker()
-							] );
-						?>
-						<?php  						
-							global $woocommerce;
-							$count = $woocommerce->cart->get_cart_contents_count();
-						?>
-						<li><a class="view-cart" href="/cart">Cart (<?php echo $count; ?>)</a></li>
-					</ul>
-				</div><!-- /nav collapse -->
-			</nav>
+			<div class="ml-auto align-self-center"><!-- delete this div if not using top-content -->
+				<div class="top-content text-right">
+					<p class="m-0 mr-2">Call us today! 123-123-1234</p>
+				</div>
+	
+				<nav class="navbar navbar-expand-lg ml-auto navbar-light">
+					<button class="navbar-toggler ml-auto" type="button" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<?php
+								wp_nav_menu( [
+									'menu'            => 'primary',
+									'depth'           => 2,
+									'container'       => false,
+									'items_wrap'      => '%3$s',
+									'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+									'walker'          => new WP_Bootstrap_Navwalker()
+								] );
+							?>
+	<?php /*
+							<?php 
+								// show cart items count in nav
+								global $woocommerce;
+								$count = $woocommerce->cart->get_cart_contents_count();
+							?>
+							<li><a class="view-cart" href="/cart">Cart (<?php echo $count; ?>)</a></li>
+	*/ ?>
+						</ul>
+					</div><!-- /nav collapse -->
+				</nav>
+			</div>
 
 		</div><!-- /flex nav -->
 

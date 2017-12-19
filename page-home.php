@@ -3,7 +3,7 @@
 
 <section class="hero">
 
-	<div class="hero-bg flex-center" style="background-image: url('http://s3.amazonaws.com/scripps-com/ample_admin/attachments/files/000/000/407/original/Cincinnati2.jpg');">
+	<div class="hero-bg flex-center" style="background-image: url('//s3.amazonaws.com/scripps-com/ample_admin/attachments/files/000/000/407/original/Cincinnati2.jpg');">
 		<div class="overlay"></div>
 		<div class="hero-content">
 			<h1 class="title">Some Headline Here</h1>
@@ -35,7 +35,7 @@
 			<div class="col-lg mb-30">
 				<div class="main-content">
 					<h2 class="title">Title Here</h2>
-					<img class="img-fluid mb-10" src="http://placehold.it/768x400">
+					<img class="img-fluid mb-10" src="//placehold.it/768x400">
 					<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished typeset text. We will replace this copy when you can give us more info.</p>
 					<a href="" class="btn btn-primary">Button <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
@@ -43,7 +43,7 @@
 			<div class="col-lg mb-30">
 				<div class="main-content">
 					<h2 class="title">Title Here</h2>
-					<img class="img-fluid mb-10" src="http://placehold.it/768x400">
+					<img class="img-fluid mb-10" src="//placehold.it/768x400">
 					<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished typeset text. We will replace this copy when you can give us more info.</p>
 					<a href="" class="btn btn-primary">Button <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>
@@ -51,7 +51,7 @@
 			<div class="col-lg mb-30">
 				<div class="main-content">
 					<h2 class="title">Title Here</h2>
-					<img class="img-fluid mb-10" src="http://placehold.it/768x400">
+					<img class="img-fluid mb-10" src="//placehold.it/768x400">
 					<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished typeset text. We will replace this copy when you can give us more info.</p>
 					<a href="" class="btn btn-primary">Button <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 				</div>

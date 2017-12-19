@@ -35,35 +35,6 @@ include('includes/func_post_types.php');
 -------------------------------------------------------------------*/
 //add_theme_support( 'post-thumbnails' );
 
-
-/*
-// remove wordpress default image sizes to save disk space
-function bigcity_remove_default_image_sizes( $sizes) {
-    unset( $sizes['thumbnail']);
-    unset( $sizes['medium']);
-    unset( $sizes['medium_large']);
-    unset( $sizes['large']);
-    unset( $sizes['shop_single']); // woocommerce size
-    unset( $sizes['shop_thumbnail']); // woocommerce size
-    unset( $sizes['shop_catalog']); // woocommerce size
-
-    return $sizes;
-}
-add_filter('intermediate_image_sizes_advanced', 'bigcity_remove_default_image_sizes');
-
-// create your own image sizes
-//add_image_size( 'post_thumb', 900, 500, true );
-// allow users to select this size when adding images to a post with media uploader
-function bigcity_add_image_sizes_to_media_uploader($sizes) {
-	$addsizes = array(
-		"post_thumb" => __('Thumb')
-	);
-	$newsizes = array_merge($sizes, $addsizes);
-	return $newsizes;
-}
-add_filter('image_size_names_choose', 'bigcity_add_image_sizes_to_media_uploader');
-*/
-
 // add custom logo to login page
 function bigcity_login_logo_css() { ?>
     <style type="text/css">

@@ -2,7 +2,7 @@ $(function(){
     'use strict'
 
 	// find all youtube iframes and make them responsive
-	$('iframe[src*=youtube]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+	//$('iframe[src*=youtube]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
 
 	// mobile nav trigger
 	var mobileNav = $('.mobile-nav');

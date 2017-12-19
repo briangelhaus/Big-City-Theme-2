@@ -23,7 +23,7 @@
 					</div>
 					<div class="col-md">
 						123 Main St.<br>
-						Ansonia, Ohio 45303
+						Cincinnati, Ohio 45248
 					</div>
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
