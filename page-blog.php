@@ -49,9 +49,9 @@
 					<div class="col-md-4 col-sm-6 post">
 						<a href="<?php echo get_permalink($pid); ?>" class="post-link">
 						<?php if($featuredImage): ?>
-							<img class="post-image img-responsive" src="<?php echo $featuredImageURL; ?>" alt="<?php echo get_the_title($pid); ?>">
+							<img class="post-image img-fluid" src="<?php echo $featuredImageURL; ?>" alt="<?php echo get_the_title($pid); ?>">
 						<?php else: ?>
-							<img class="post-image img-responsive" src="http://placehold.it/600x450"></a>
+							<img class="post-image img-fluid" src="http://placehold.it/600x450"></a>
 						<?php endif; ?>
 						</a>
 						<h2 class="post-title"><a href="<?php echo get_permalink($pid); ?>"><?php echo $p->post_title; ?></a></h2>

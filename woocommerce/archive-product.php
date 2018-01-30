@@ -2,18 +2,10 @@
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/archive-product.php.
- *
- * HOWEVER, on occasion WooCommerce will need to update template files and you
- * (the theme developer) will need to copy the new files to your theme to
- * maintain compatibility. We try to do this as little as possible, but it does
- * happen. When this occurs the version of the template file will be bumped and
- * the readme will list any important changes.
- *
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.0.0
+ * @version     3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -111,6 +103,8 @@ get_header( 'shop' ); ?>
 				//global $product;
 				$pid = $p->ID;
 				$price = get_post_meta($pid, '_price');
+				$review_average = get_post_meta($pid, '_wc_average_rating');
+				$review_count = get_post_meta($pid, '_wc_review_count');
 				$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($pid), 'medium' );
 			 ?>
 
@@ -124,6 +118,14 @@ get_header( 'shop' ); ?>
 						<?php endif; ?>
 					</div><!-- /no image -->
 					<h2 class="product-title"><?php echo get_the_title($pid); ?></h2>
+					
+					<?php if($review_average[0] > 0): ?>
+					<div class="star-rating">
+						<span style="width:<?php echo $review_average[0] / 5  * 100; ?>%">
+						<strong itemprop="ratingValue" class="rating"><?php echo $review_average[0]; ?></strong> out of 5</span>
+					</div><!-- /star rating -->
+					<?php endif; ?>
+					
 					<span class="p product-price">$<?php echo $price[0]; ?></span>
 				</a>
 			</div><!-- /col product -->

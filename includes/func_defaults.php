@@ -213,3 +213,12 @@ function stop_heartbeat() {
 }
 add_action( 'init', 'stop_heartbeat', 1 );
 */
+
+// tell tiny mce to stop removing empty span and div tags
+function override_mce_options($initArray) {
+    $opts = '*[*]';
+    $initArray['valid_elements'] = $opts;
+    $initArray['extended_valid_elements'] = $opts;
+    return $initArray;
+} 
+add_filter('tiny_mce_before_init', 'override_mce_options');

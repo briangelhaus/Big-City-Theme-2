@@ -22,8 +22,10 @@
 						<i class="display-4 fa fa-map-marker large" aria-hidden="true"></i>
 					</div>
 					<div class="col-md">
-						123 Main St.<br>
-						Cincinnati, Ohio 45248
+						<span>
+							123 Main St.<br>
+							Cincinnati, Ohio 45248
+						</span>
 					</div>
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
@@ -31,7 +33,7 @@
 						<i class="display-4 fa fa-mobile-phone" aria-hidden="true"></i>
 					</div>
 					<div class="col-md">
-						123-123-1234
+						<span>123-123-1234</span>
 					</div>
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
@@ -39,8 +41,10 @@
 						<i class="display-4 fa fa fa-clock-o" aria-hidden="true"></i>
 					</div>
 					<div class="col-md">
-						Mon-Fri: 9am - 5pm<br>
-						Sat: 9am - 1pm
+						<span>
+							Mon-Fri: 9am - 5pm<br>
+							Sat: 9am - 1pm
+						</span>
 					</div>
 				</div><!-- /row -->
 			</div><!-- /col -->
@@ -48,10 +52,10 @@
 			<div class="col-md-4 social">
 				<h4 class="title mb-20">Social Media</h4>
 				<ul class="list-unstyled">
-					<li><a href=""><i class="fa fa-facebook-square mr-1" aria-hidden="true"></i> Facebook</a></li>
-					<li><a href=""><i class="fa fa-twitter-square mr-1" aria-hidden="true"></i> Twitter</a></li>
-					<li><a href=""><i class="fa fa-instagram mr-1" aria-hidden="true"></i> Instagram</a></li>
-					<li><a href=""><i class="fa fa-rss-square mr-1" aria-hidden="true"></i> Blog</a></li>
+					<li class="mb-1"><a href=""><i class="fa fa-facebook-square mr-1" aria-hidden="true"></i> Facebook</a></li>
+					<li class="mb-1"><a href=""><i class="fa fa-twitter-square mr-1" aria-hidden="true"></i> Twitter</a></li>
+					<li class="mb-1"><a href=""><i class="fa fa-instagram mr-1" aria-hidden="true"></i> Instagram</a></li>
+					<li class="mb-1"><a href=""><i class="fa fa-rss-square mr-1" aria-hidden="true"></i> Blog</a></li>
 				</ul>
 			</div><!-- /col -->
 			

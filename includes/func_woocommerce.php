@@ -56,3 +56,10 @@ function remove_help($old_help, $screen_id, $screen){
     return $old_help;
 }
 add_filter( 'contextual_help', 'remove_help', 999, 3 );
+
+// edit the order complete thank you page text
+add_filter('woocommerce_thankyou_order_received_text', 'woo_change_order_received_text', 10, 2 );
+function woo_change_order_received_text( $thank_yout_text, $order ) {
+    $thank_yout_text = 'Thank you. Your order has been received.';
+    return $thank_yout_text;
+}
