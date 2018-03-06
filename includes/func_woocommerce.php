@@ -63,3 +63,12 @@ function woo_change_order_received_text( $thank_yout_text, $order ) {
     $thank_yout_text = 'Thank you. Your order has been received.';
     return $thank_yout_text;
 }
+
+// edit the subject line of the new order emails that are sent to the admin
+add_filter('woocommerce_email_subject_new_order', 'change_admin_email_subject', 1, 2);
+function change_admin_email_subject( $subject, $order ) {
+	global $woocommerce;
+	$blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
+	$subject = sprintf('New Customer Order (#%s) from %s %s', $order->id, $order->billing_first_name, $order->billing_last_name);
+	return $subject;
+}

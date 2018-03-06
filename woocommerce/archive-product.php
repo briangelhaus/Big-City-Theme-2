@@ -55,7 +55,7 @@ if(is_shop()){
 
 get_header( 'shop' ); ?>
 		
-<?php include($_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/bigcity2/includes/banner.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/bigcity/includes/banner.php'); ?>
 
 <div class="page-content">
 	<div class="container">

@@ -18,7 +18,7 @@
 			<div class="col-md-4 contact">
 				<h4 class="title mb-20">Contact</h4>
 				<div class="row align-items-center mb-2">
-					<div class="col-md-2 text-center">
+					<div class="col-md-1 text-center">
 						<i class="display-4 fa fa-map-marker large" aria-hidden="true"></i>
 					</div>
 					<div class="col-md">
@@ -29,7 +29,7 @@
 					</div>
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
-					<div class="col-md-2 text-center">
+					<div class="col-md-1 text-center">
 						<i class="display-4 fa fa-mobile-phone" aria-hidden="true"></i>
 					</div>
 					<div class="col-md">
@@ -37,7 +37,7 @@
 					</div>
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
-					<div class="col-md-2 text-center">
+					<div class="col-md-1 text-center">
 						<i class="display-4 fa fa fa-clock-o" aria-hidden="true"></i>
 					</div>
 					<div class="col-md">
