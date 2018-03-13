@@ -22,7 +22,7 @@ add_action('admin_menu', 'bigcity_remove_admin_pages');
 function wptutsplus_change_post_menu_label() {
     global $menu;
     global $submenu;
-    $menu[5][0] = 'News'; // change Posts to News
+    //$menu[5][0] = 'News'; // change Posts to News
     $submenu['plugins.php'][10][2] = 'plugin-install.php?tab=favorites'; // default to favorites
 }
 add_action( 'admin_menu', 'wptutsplus_change_post_menu_label' );
@@ -58,6 +58,15 @@ function bigcity_client_help_function() {
 	</p>
 
 	<hr>
+	
+	
+	<h2>How to add a Blog Post</h2>
+	<ol>
+		<li>Click on "Posts" > "Add New" on the left sidebar.</li>
+		<li>Give it a title and some body copy.</li>
+		<li>Upload a featured image</li>
+		<li>Click Publish.</li>
+	</ol>
 
 	<h2>How to add a new Page</h2>
 	<ol>

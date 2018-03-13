@@ -48,13 +48,13 @@
 					?>
 					<div class="col-md-4 col-sm-6 post">
 						<a href="<?php echo get_permalink($pid); ?>" class="post-link">
-						<?php if($featuredImage): ?>
-							<img class="post-image img-fluid" src="<?php echo $featuredImageURL; ?>" alt="<?php echo get_the_title($pid); ?>">
-						<?php else: ?>
-							<img class="post-image img-fluid" src="http://placehold.it/600x450"></a>
-						<?php endif; ?>
+							<?php if($featuredImage): ?>
+								<img class="post-image img-fluid" src="<?php echo $featuredImageURL; ?>" alt="<?php echo get_the_title($pid); ?>">
+							<?php else: ?>
+								<img class="post-image img-fluid" src="http://placehold.it/600x450"></a>
+							<?php endif; ?>
+							<h2 class="post-title"><?php echo $p->post_title; ?></h2>
 						</a>
-						<h2 class="post-title"><a href="<?php echo get_permalink($pid); ?>"><?php echo $p->post_title; ?></a></h2>
 						<span class="p post-date"><?php echo get_the_date('', $pid); ?></span>
 						<p><?php echo $content; ?>... <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
 					</div>

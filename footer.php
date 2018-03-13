@@ -15,13 +15,13 @@
 	<div class="container">
 		
 		<div class="row">
-			<div class="col-md-4 contact">
+			<div class="col-md-4 contact mb-20">
 				<h4 class="title mb-20">Contact</h4>
 				<div class="row align-items-center mb-2">
-					<div class="col-md-1 text-center">
+					<div class="col-2 text-center">
 						<i class="display-4 fa fa-map-marker large" aria-hidden="true"></i>
 					</div>
-					<div class="col-md">
+					<div class="col-10">
 						<span>
 							123 Main St.<br>
 							Cincinnati, Ohio 45248
@@ -29,18 +29,18 @@
 					</div>
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
-					<div class="col-md-1 text-center">
+					<div class="col-2 text-center">
 						<i class="display-4 fa fa-mobile-phone" aria-hidden="true"></i>
 					</div>
-					<div class="col-md">
+					<div class="col-10">
 						<span>123-123-1234</span>
 					</div>
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
-					<div class="col-md-1 text-center">
+					<div class="col-2 text-center">
 						<i class="display-4 fa fa fa-clock-o" aria-hidden="true"></i>
 					</div>
-					<div class="col-md">
+					<div class="col-10">
 						<span>
 							Mon-Fri: 9am - 5pm<br>
 							Sat: 9am - 1pm
@@ -49,13 +49,13 @@
 				</div><!-- /row -->
 			</div><!-- /col -->
 			
-			<div class="col-md-4 social">
+			<div class="col-md-4 social mb-20">
 				<h4 class="title mb-20">Social Media</h4>
 				<ul class="list-unstyled">
-					<li class="mb-1"><a href=""><i class="fa fa-facebook-square mr-1" aria-hidden="true"></i> Facebook</a></li>
-					<li class="mb-1"><a href=""><i class="fa fa-twitter-square mr-1" aria-hidden="true"></i> Twitter</a></li>
-					<li class="mb-1"><a href=""><i class="fa fa-instagram mr-1" aria-hidden="true"></i> Instagram</a></li>
-					<li class="mb-1"><a href=""><i class="fa fa-rss-square mr-1" aria-hidden="true"></i> Blog</a></li>
+					<li class="mb-1"><a href="" target="_blank"><i class="fa fa-facebook-square mr-1" aria-hidden="true"></i> Facebook</a></li>
+					<li class="mb-1"><a href="" target="_blank"><i class="fa fa-twitter-square mr-1" aria-hidden="true"></i> Twitter</a></li>
+					<li class="mb-1"><a href="" target="_blank"><i class="fa fa-instagram mr-1" aria-hidden="true"></i> Instagram</a></li>
+					<li class="mb-1"><a href="" target="_blank"><i class="fa fa-rss-square mr-1" aria-hidden="true"></i> Blog</a></li>
 				</ul>
 			</div><!-- /col -->
 			
@@ -71,7 +71,7 @@
 			</div><!-- /col -->
 		</div><!-- /row -->
 		
-		<div class="row mt-60">
+		<div class="row mt-40">
 			<div class="col-sm-12">
 				<div class="text-center">
 					<p class="mb-0 small copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> | <a href="//primaxstudio.com" target="_blank" rel="nofollow">Web Design by Primax Studio</a></p>
