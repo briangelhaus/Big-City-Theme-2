@@ -100,8 +100,8 @@ get_header( 'shop' ); ?>
 				$i = 0;
 				foreach($products as $p):
 				$i++;
-				//global $product;
 				$pid = $p->ID;
+				$wcproduct = wc_get_product( $pid );
 				$price = get_post_meta($pid, '_price');
 				$review_average = get_post_meta($pid, '_wc_average_rating');
 				$review_count = get_post_meta($pid, '_wc_review_count');
@@ -126,7 +126,7 @@ get_header( 'shop' ); ?>
 					</div><!-- /star rating -->
 					<?php endif; ?>
 					
-					<span class="p product-price">$<?php echo $price[0]; ?></span>
+					<span class="p product-price"><?php echo $wcproduct->get_price_html(); ?></span>
 				</a>
 			</div><!-- /col product -->
 

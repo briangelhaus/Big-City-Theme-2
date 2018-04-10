@@ -70,7 +70,7 @@
 
 /* mobile nav
 -------------------------------------------------------------------*/
-.mobile-nav { background-color: rgba(35,35,35,.9); width: 100%; right: -100%; position: fixed; top: 0; z-index: 1000; height: 100%; padding: 17px 0 0 0; display: none; }
+.mobile-nav { background-color: rgba(35,35,35,.9); width: 100%; right: -100%; position: fixed; top: 0; z-index: 1000; height: 100%; padding: 17px 0 0 0; display: none; overflow-y: auto; }
 .mobile-nav a.mobile-close { font-weight: bold; float: right; color: #fff; font-size: 40px; color: #fff; padding: 0 5px; }
 .mobile-nav a.mobile-close:hover  { text-decoration: none; opacity: .6; text-decoration: none; }
 .mobile-nav ul { list-style-type: none; margin: 0; }

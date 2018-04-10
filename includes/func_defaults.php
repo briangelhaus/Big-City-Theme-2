@@ -231,3 +231,17 @@ function override_mce_options($initArray) {
     return $initArray;
 } 
 add_filter('tiny_mce_before_init', 'override_mce_options');
+
+
+// remove classes tinyMCE throws on common tags
+// replaces <p class="p1"></p> with kist <p></p>
+add_filter('tiny_mce_before_init', 'customize_tinymce');
+function customize_tinymce($in) {
+	$in['paste_preprocess'] = "function(pl,o){ 
+		o.content = o.content.replace(/p class=\"p[0-9]+\"/gi,'p'); 
+		o.content = o.content.replace(/span class=\"s[0-9]+\"/gi,'span'); 
+		o.content = o.content.replace(/ul class=\"ul[0-9]+\"/gi,'ul'); 
+		o.content = o.content.replace(/li class=\"li[0-9]+\"/gi,'li'); 
+	}";
+	return $in;
+}
