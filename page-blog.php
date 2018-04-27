@@ -6,7 +6,7 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 order-2 order-md-1">
 				<div class="blog-sidebar">
 					<h3>Categories</h3>
 					<ul>
@@ -18,7 +18,7 @@
 					</ul>
 				</div><!-- /sidebar -->
 			</div><!-- /col -->
-			<div class="col-md-9">
+			<div class="col-md-9 order-1 order-md-2">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1><?php the_title(); ?></h1>
@@ -73,8 +73,8 @@
 							<?php
 								$big = 999999999; // need an unlikely integer
 								echo paginate_links( array(
-									'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-									'format' => '?paged=%#%',
+									//'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+									//'format' => '?paged=%#%',
 									'current' => max( 1, $paged ),
 									'total' => $query->max_num_pages
 								) );
