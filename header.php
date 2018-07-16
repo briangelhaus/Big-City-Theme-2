@@ -6,21 +6,6 @@
 
 	<?php wp_head(); ?>
 
-	<?php
-		/*
-			enable SEO by Yoast for basic Open Graph tags
-			uncomment the below meta tags for a sitewide sharing image
-			facebook image - 1200px × 630px
-			twitter image - minimum of 120px x 120px
-
-			debug your facebook OG tags here: https://developers.facebook.com/tools/debug/sharing/
-			debug your twitter OG tags here: https://cards-dev.twitter.com/validator
-
-			<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/facebook_image.jpg" />
-			<meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/images/twitter_image.jpg" />
-		*/
-	?>
-
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" rel="icon" />
 

@@ -72,3 +72,9 @@ function change_admin_email_subject( $subject, $order ) {
 	$subject = sprintf('New Customer Order (#%s) from %s %s', $order->id, $order->billing_first_name, $order->billing_last_name);
 	return $subject;
 }
+
+// add continue shopping button on the add to cart notice
+add_filter('wc_add_to_cart_message', 'handler_function_name', 10, 2);
+function handler_function_name($message, $product_id) {
+    return '<a href="/shop/" class="button wc-forward" style="margin-left: 20px;">Continue Shopping</a>'. $message;
+}

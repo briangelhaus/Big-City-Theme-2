@@ -1,8 +1,8 @@
 <?php
 /*
 function bigcity_posttype_ITEM() {
-	$single = 'Category';
-	$plural = 'Categories';
+	$single = 'Item';
+	$plural = 'Items';
 	$labels = array(
 		'name'              => _x( $plural, 'taxonomy general name' ),
 		'singular_name'     => _x( $single, 'taxonomy singular name' ),
