@@ -18,6 +18,25 @@ function bigcity_remove_admin_pages(){
 }
 add_action('admin_menu', 'bigcity_remove_admin_pages');
 
+// remove wordpress default image sizes to save disk space
+function bigcity_remove_default_image_sizes( $sizes) {
+	// we're using so keep
+    //unset( $sizes['thumbnail']); // 300px                                wordpress settings /wp-admin/options-media.php
+    //unset( $sizes['medium_large']); 768px                                wordpress core creates this
+    //unset( $sizes['large']); 1200px                                      wordpress settings /wp-admin/options-media.php
+
+    // not using so we remove
+    unset( $sizes['medium']); // this ones pointless since theres a 768px  wordpress settings /wp-admin/options-media.php
+    unset( $sizes['woocommerce_single']); // woocommerce size
+    unset( $sizes['shop_single']); // woocommerce size
+    unset( $sizes['woocommerce_thumbnail']); // woocommerce size
+    unset( $sizes['shop_thumbnail']); // woocommerce size
+    unset( $sizes['woocommerce_gallery_thumbnail']); // woocommerce size
+    unset( $sizes['shop_catalog']); // woocommerce size
+    return $sizes;
+}
+add_filter('intermediate_image_sizes_advanced', 'bigcity_remove_default_image_sizes');
+
 // rename admin sidebar items
 function wptutsplus_change_post_menu_label() {
     global $menu;
