@@ -1,0 +1,51 @@
+/*
+	blue - #007bff
+*/
+
+/* Type
+-------------------------------------------------------------------*/
+body { color: #333; font-family: 'Open Sans', sans-serif; }
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+
+.btn-primary { border: none; background-color: #007bff; }
+.btn-primary:hover { background-color: #000; }
+.btn .fa { margin-left: 5px; }
+
+
+/* Header
+-------------------------------------------------------------------*/
+header.main .logo img { width: 125px; }
+header.main ul.nav li a { display: inline-block; font-size: 16px; color: #333; padding: 10px; }
+
+
+/* Site Wide
+-------------------------------------------------------------------*/
+.page-content { margin: 40px 0; }
+
+
+/* Home
+-------------------------------------------------------------------*/
+.home section { position: relative; }
+.home .hero .hero-content { width: 400px; text-align: center; position: relative; z-index: 15; }
+.home .hero .hero-content .title { color: #fff; margin-bottom: 30px; }
+.home .hero-bg { background-position: center center; background-size: cover; min-height: 600px; }
+.overlay { background-color: rgba(0,0,0,.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; }
+
+
+/* Single Post
+-------------------------------------------------------------------*/
+.social-share { margin: 0 0 20px 0; }
+.social-share a { font-size: 28px; color: #333; margin-left: 8px; position: relative; top: 4px; }
+.social-share a:hover { text-decoration: none; opacity: .7; }
+.social-share-text { font-size: 15px; }
+
+
+/* Footer
+-------------------------------------------------------------------*/
+footer.main { background: #333; }
+footer.main * { color: #fff; }
+footer.main .contact .fa { font-size: 22px; }
+footer.main .copyright a { text-decoration: underline; }
