@@ -1,0 +1,42 @@
+/* colors
+-------------------------------------------------------------------*/
+$primary: #27A5DC;
+$white:   #fff;
+$black:   #000;
+
+
+// angles
+$angle-primary: skewY(11deg);
+$angle-primary-negative: skewY(-11deg);
+
+
+/* media queries
+-------------------------------------------------------------------*/
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1400px;
+
+@mixin sm {
+    @media (min-width: #{$sm}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: #{$md}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: #{$lg}) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: #{$xl}) {
+        @content;
+    }
+}

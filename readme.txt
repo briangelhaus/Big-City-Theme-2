@@ -1,3 +1,10 @@
+OPTIONAL - rename big_city theme to your own them name
+1- change bigcity folder theme name to your project
+2- inside of style.css, change big city to your project name
+3- find and replace “bigcity” with your project name in functions.php
+4- activate your new theme name
+
+
 USING THEME
 1- add a menu called "primary" in the admin
 2- add a new page called home and set it to default front page in reading settings
@@ -6,13 +13,44 @@ USING THEME
 NO WOOCOMMERCE?
 1- remove the woocommerce folder
 2- remove woocommerce code in wp.css
-3- remove woocommerce code in functions.php
+3- remove includes/func_woocommerce.php
+
+
+NPM
+- remove package-gulp.json
+- change CHANGE.local.com to your url in package.json
+- terminal to your theme folder
+- type "npm install" in terminal to install all dependencies requires in the package.json file
+- type "npm run dev" 
+
+GIT
+- Create repo at https://bitbucket.org/
+- run the 2 commands they give you for an existing project
+- terminal to your theme folder
+- create .gitignore file and add node_modules and .DS_Store
+- git init
+- git add .
+- git commit -m "first"
+- git push
+
+
+SLACK with GIT
+- go to project channel
+- @bitbucket and invite them
+- /bitbucket connect <your-repository-url> - which is the clone URL
+	- /bitbucket connect https://briangelhaus@bitbucket.org/primax/allite-inc.git
+- link account
+- run the /bitbucket connect <your-repository-url> again
+- create subscription
+- git push to test it works
+
 
 GULP
-1- terminal to your theme folder
-2- type "npm install" in terminal to install all dependencies requires in the package.json file
-3- change your proxy url in the gulpfile.js
-4- type "gulp" in terminal to run browser sync
+- remove package-npm.json
+- terminal to your theme folder
+- type "npm install" in terminal to install all dependencies requires in the package-gulp.json file
+- change your proxy url in the gulpfile.js
+- type "gulp" in terminal to run browser sync
 
 
 NO GULP?
@@ -72,10 +110,3 @@ wp-includes/.htaccess
   </IfModule>
 </Files>
 ——————————————————————
-
-
-OPTIONAL - rename big_city theme to your own them name
-1- change bigcity folder theme name to your project
-2- inside of style.css, change big city to your project name
-3- find and replace “bigcity” with your project name in functions.php
-4- activate your new theme name
