@@ -56,54 +56,14 @@ body.mce-content-body { font-family: Helvetica, Arial; }
 .woocommerce-checkout-payment .place-order input { font-size: 22px; }
 
 
-/* ninja forms
+/* gravity forms
 -------------------------------------------------------------------*/
-.nf-form-cont { font-size: 1.5em; }
-.nf-form-cont p { font-size: 1em; }
-.nf-form-cont input,
-.nf-form-cont select,
-.nf-form-cont textarea { border: 1px solid #ccc; -webkit-border-radius: 4px; border-radius: 4px; padding: 2px 5px; color: #555; background-color: #fff; }
-.nf-form-cont select { height: 28px; }
-.nf-form-cont label { color: #555; }
-.nf-form-cont .submit-container input { background-color: #000; color: #fff; -webkit-border-radius: 4px; border-radius: 4px; border: none; padding: 10px 20px; }
-.nf-form-cont .submit-container input:hover { background-color: #333; }
-.nf-form-cont textarea { height: 80px !important; margin-right: 2%; width: 100% !important; }
-.nf-field-container, #ninja_forms_required_items { margin-bottom: 15px !important; }
-.nf-response-msg p { color: green; font-size: 1.3em; }
-
-/* use the 2.9 version of ninja form
-
-form.ninja-forms-form { font-size: 1.5em; }
-form.ninja-forms-form li,
-form.ninja-forms-form p { font-size: 1em; }
-form.ninja-forms-form input[type="text"],
-form.ninja-forms-form select,
-form.ninja-forms-form textarea { border: 1px solid #ccc; -webkit-border-radius: 4px; border-radius: 4px; padding: 2px 5px; color: #555; }
-form.ninja-forms-form select { height: 28px; }
-form.ninja-forms-form label { color: #555; }
-form.ninja-forms-form .label-left label { float: left; display: block; width: 125px; }
-form.ninja-forms-form input[type='submit'] { background-color: #000; color: #fff; -webkit-border-radius: 4px; border-radius: 4px; border: none; padding: 10px 20px; }
-form.ninja-forms-form input[type='submit']:hover { background-color: #333; }
-form.ninja-forms-form textarea { height: 80px !important; }
-form.ninja-forms-form .ninja-forms-required-items { display: none; }
-form.ninja-forms-form .field-wrap button { font-size: 1em !important; }
-form.ninja-forms-form .field-wrap.label-left .ninja-forms-field, .field-wrap.label-left .ninja-forms-star-rating-control { margin-left: 0 !important; }
-form.ninja-forms-form .field-wrap, #ninja_forms_required_items { margin-bottom: 10px !important; }
-
-form.ninja-forms-form .ninja-forms-success-msg { color: green; }
-div.ninja-forms-response-msg { font-size: 1.5em; margin-bottom: 10px; color: red; }
-form.ninja-forms-form .ninja-forms-error input,
-form.ninja-forms-form .ninja-forms-error select,
-form.ninja-forms-form .ninja-forms-error textarea { border: 1px solid red; }
-.ninja-forms-field-error p { color: red; }
-
-@media screen and (min-width: 600px) {
-	form.ninja-forms-form .list-dropdown-wrap,
-	form.ninja-forms-form .text-wrap,
-	form.ninja-forms-form .country-wrap { width: 48%; float: left; margin-right: 2%; height: 60px; }
-	form.ninja-forms-form .textarea-wrap { clear: both; }
-}
-*/
+.gform_wrapper { margin: 0 !important; }
+.gform_wrapper input,
+.gform_wrapper textarea { border: 1px solid #ccc; }
+.gform_wrapper label { margin-bottom: 0; }
+.gform_wrapper ul li.gfield { margin: 0 0 20px 0 !important; }
+.gform_wrapper .gform_button { background: #000; padding: 10px 20px; color: #fff; border: none; border-radius: 4px; }
 
 
 /* contact form 7

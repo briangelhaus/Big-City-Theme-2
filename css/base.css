@@ -70,7 +70,7 @@
 
 /* mobile nav
 -------------------------------------------------------------------*/
-.mobile-nav { background-color: rgba(35,35,35,.9); width: 100%; right: -100%; position: fixed; top: 0; z-index: 1000; height: 100%; padding: 17px 0 0 0; display: none; overflow-y: auto; }
+.mobile-nav { background-color: rgba(0,0,0,.9); width: 100%; right: -100%; position: fixed; top: 0; z-index: 1000; height: 100%; padding: 17px 0 0 0; display: none; overflow-y: auto; }
 .mobile-nav a.mobile-close { font-weight: bold; float: right; color: #fff; font-size: 40px; color: #fff; padding: 0 5px; }
 .mobile-nav a.mobile-close:hover  { text-decoration: none; opacity: .6; text-decoration: none; }
 .mobile-nav ul { list-style-type: none; margin: 0; }
@@ -79,7 +79,7 @@
 .mobile-nav ul.sub-menu a { padding: 10px 10px 10px 40px; }
 .mobile-nav ul a { color: #fff; padding: 15px 10px; display: block; border-bottom: 1px solid rgba(255,255,255,.3); }
 .mobile-nav ul a:before { content: "\f105"; font-family: FontAwesome; margin-right: 10px; color: #999; }
-.mobile-nav ul a:hover { background-color: rgba(85,85,85, .7); text-decoration: none; }
+.mobile-nav ul a:hover { background-color: rgba(255,255,255, .1); text-decoration: none; }
 .mobile-nav form input { margin-top: 20px; width: 100% !important; }
 @media screen and (min-width: 992px) { .mobile-nav { display: none !important; } }
 @media screen and (max-width: 782px) { .admin-bar .mobile-nav { margin-top: 46px; } }
