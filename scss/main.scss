@@ -1,17 +1,33 @@
 @import 'variables.scss';
 
+$primary: #007bff;
+$primary-hover: #0e69cc;
+
 /* Type
 -------------------------------------------------------------------*/
-body { color: #333; font-family: 'Open Sans', sans-serif; }
+body { color: #333; font-family: 'Open Sans', sans-serif; font-size: 14px; }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
+h1,.title1 { font-size: 25px; }
+h2,.title2 { font-size: 20px; }
+h3,.title3 { font-size: 18px; }
+h4,.title4 { font-size: 16px; }
+a { color: $primary; }
+a:hover { color: $primary-hover; }
 
-.btn-primary { border: none; background-color: #007bff; }
-.btn-primary:hover { background-color: #000; }
-.btn .fa { margin-left: 5px; }
+.btn { font-size: 14px; }
+.btn-primary { background-color: $primary; border: none; }
+.btn-primary:hover,
+.btn-primary:focus { background-color: $primary-hover; border: none; box-shadow: none; }
+.btn i { margin-left: 5px; }
 
+@media screen and (min-width: 991px) {
+	h1,.title1 { font-size: 30px; }
+	h2,.title2 { font-size: 25px; }
+	h3,.title3 { font-size: 20px; }
+	h4,.title4 { font-size: 18px; }
+	body { font-size: 16px; }
+	.btn { font-size: 16px; }
+}
 
 /* Header
 -------------------------------------------------------------------*/
