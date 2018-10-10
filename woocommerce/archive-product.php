@@ -117,7 +117,7 @@ get_header( 'shop' ); ?>
 							<img class="img-responsive" src="/wp-content/plugins/woocommerce/assets/images/placeholder.png" alt="" />
 						<?php endif; ?>
 					</div><!-- /no image -->
-					<h2 class="product-title"><?php echo get_the_title($pid); ?></h2>
+					<h2 class="title3 product-title"><?php echo get_the_title($pid); ?></h2>
 					
 					<?php if($review_average[0] > 0): ?>
 					<div class="star-rating">

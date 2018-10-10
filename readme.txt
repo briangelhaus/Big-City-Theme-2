@@ -24,14 +24,13 @@ NPM
 - type "npm run dev" 
 
 GIT
-- Create repo at https://bitbucket.org/
-- run the 2 commands they give you for an existing project
 - terminal to your theme folder
-- create .gitignore file and add node_modules and .DS_Store
 - git init
+- create .gitignore file and add node_modules and .DS_Store
 - git add .
 - git commit -m "first"
-- git push
+- Create repo at https://bitbucket.org/
+- run the 2 commands they give you for an existing project (git remote add origin and git push)
 
 
 SLACK with GIT

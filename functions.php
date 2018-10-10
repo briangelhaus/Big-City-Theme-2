@@ -4,7 +4,6 @@
 function bigcity_add_css_scripts() {
 	// css
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/css/bootstrap.min.css');
-	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_style( 'base', get_template_directory_uri().'/css/base.css');
 	wp_enqueue_style( 'wp', get_template_directory_uri().'/css/wp.css');
 	wp_enqueue_style( 'main', get_template_directory_uri().'/css/main.css');

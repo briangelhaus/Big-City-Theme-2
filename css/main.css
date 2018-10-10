@@ -4,16 +4,28 @@
 
 /* Type
 -------------------------------------------------------------------*/
-body { color: #333; font-family: 'Open Sans', sans-serif; }
+body { color: #333; font-family: 'Open Sans', sans-serif; font-size: 14px; }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
+h1,.title1 { font-size: 25px; }
+h2,.title2 { font-size: 20px; }
+h3,.title3 { font-size: 18px; }
+h4,.title4 { font-size: 16px; }
+a { color: #007bff; }
+a:hover { color: #0e69cc; }
 
+.btn { font-size: 14px; }
 .btn-primary { border: none; background-color: #007bff; }
-.btn-primary:hover { background-color: #000; }
-.btn .fa { margin-left: 5px; }
+.btn-primary:hover { background-color: #0e69cc; }
+.btn i { margin-left: 5px; }
 
+@media screen and (min-width: 991px) {
+	h1,.title1 { font-size: 30px; }
+	h2,.title2 { font-size: 25px; }
+	h3,.title3 { font-size: 20px; }
+	h4,.title4 { font-size: 18px; }
+	body { font-size: 16px; }
+	.btn { font-size: 16px; }
+}
 
 /* Header
 -------------------------------------------------------------------*/
@@ -47,5 +59,5 @@ header.main ul.nav li a { display: inline-block; font-size: 16px; color: #333; p
 -------------------------------------------------------------------*/
 footer.main { background: #333; }
 footer.main * { color: #fff; }
-footer.main .contact .fa { font-size: 22px; }
+footer.main .contact i { font-size: 22px; }
 footer.main .copyright a { text-decoration: underline; }

@@ -156,30 +156,39 @@ $related_products = $query->posts;
 			</div><!-- row -->
 		
 			<?php if($related_products): ?>
-			<div class="related-products products">
-				<h2>More Products In <?php echo $current_cat_name; ?></h2>
+			<div class="related-products products mt-60">
+				<h3 class="title2">More Products In <?php echo $current_cat_name; ?></h3>
 				<div class="row">
 				<?php
 					foreach($related_products as $rp):
 					$rpid = $rp->ID;
+					$wcproduct = wc_get_product( $rpid );
 					$price = get_post_meta($rpid, '_price');
-					$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($rpid), 'medium');
-					$title = get_the_title($rpid);
+					$review_average = get_post_meta($rpid, '_wc_average_rating');
+					$review_count = get_post_meta($rpid, '_wc_review_count');
+					$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($rpid), 'medium' );
 				?>
-					<div class="col-sm-3 product">
+					<div class="col-sm-6 col-md-4 product">
 						<a href="<?php echo get_the_permalink($rpid); ?>">
-							<?php if($featuredImage): ?>
-							<img src="<?php echo $featuredImage[0]; ?>" alt="<?php echo $title; ?>">
-							<?php else: ?>
-							<img src="/wp-content/plugins/woocommerce/assets/images/placeholder.png" alt="no image">
+							<div class="product-image">
+								<?php if($featuredImage): ?>
+									<img class="img-responsive" src="<?php echo $featuredImage[0]; ?>" alt="">
+								<?php else: ?>
+									<img class="img-responsive" src="/wp-content/plugins/woocommerce/assets/images/placeholder.png" alt="" />
+								<?php endif; ?>
+							</div><!-- /no image -->
+							<h4 class="product-title"><?php echo get_the_title($rpid); ?></h2>
+							
+							<?php if($review_average[0] > 0): ?>
+							<div class="star-rating">
+								<span style="width:<?php echo $review_average[0] / 5  * 100; ?>%">
+								<strong itemprop="ratingValue" class="rating"><?php echo $review_average[0]; ?></strong> out of 5</span>
+							</div><!-- /star rating -->
 							<?php endif; ?>
-							<h2><?php echo $title; ?></h2>
-							<?php if($price): ?>
-							<span class="p product-price">$<?php echo $price[0]; ?></span>
-							<?php endif; ?>
-							<button class="button">View Product</button>
+							
+							<span class="p product-price"><?php echo $wcproduct->get_price_html(); ?></span>
 						</a>
-					</div><!-- /item -->
+					</div><!-- /col product -->
 				<?php endforeach; ?>
 				</div><!-- /row -->
 			</div><!-- related products-->

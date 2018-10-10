@@ -21,9 +21,9 @@ add_action('admin_menu', 'bigcity_remove_admin_pages');
 // remove wordpress default image sizes to save disk space
 function bigcity_remove_default_image_sizes( $sizes) {
 	// we're using so keep
-    //unset( $sizes['thumbnail']); // 300px                                wordpress settings /wp-admin/options-media.php
-    //unset( $sizes['medium_large']); 768px                                wordpress core creates this
-    //unset( $sizes['large']); 1200px                                      wordpress settings /wp-admin/options-media.php
+    //unset( $sizes['thumbnail']); // 300px  wordpress settings /wp-admin/options-media.php
+    //unset( $sizes['medium_large']); 768px  wordpress core creates this
+    //unset( $sizes['large']); 1200px        wordpress settings /wp-admin/options-media.php
 
     // not using so we remove
     unset( $sizes['medium']); // this ones pointless since theres a 768px  wordpress settings /wp-admin/options-media.php
@@ -59,7 +59,9 @@ add_action('admin_menu', 'my_remove_sub_menus');
 // add client help widget to admin dashboard
 // http://codex.wordpress.org/Dashboard_Widgets_API
 function bigcity_add_dashboard_widgets() {
-	wp_add_dashboard_widget('client_help','Client Help','bigcity_client_help_function');
+	if(current_user_can('administrator')){
+		wp_add_dashboard_widget('client_help','Client Help','bigcity_client_help_function');
+	}
 }
 add_action( 'wp_dashboard_setup', 'bigcity_add_dashboard_widgets' );
 function bigcity_client_help_function() {

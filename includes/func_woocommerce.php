@@ -24,7 +24,7 @@ function bigcity_remove_wc_breadcrumbs() {
 add_filter( 'woocommerce_breadcrumb_defaults', 'bigcity_woocommerce_breadcrumbs' );
 function bigcity_woocommerce_breadcrumbs() {
     return array(
-            'delimiter'   => ' <span>&#10095;</span> ',
+            'delimiter'   => ' <span><i class="fas fa-chevron-right"></i></span> ',
             'wrap_before' => '<nav class="woocommerce-breadcrumb" itemprop="breadcrumb">',
             'wrap_after'  => '</nav>',
             'before'      => '',

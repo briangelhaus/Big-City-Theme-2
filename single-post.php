@@ -27,32 +27,29 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-lg-8 offset-lg-2">
 				<div <?php post_class('main-content'); ?>>
 					<h1><?php the_title(); ?></h1>
 
 					<div class="social-share">
 						<span class="social-share-text">SHARE: </span>
 						<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $pageURL; ?>&amp;src=sdkpreparse">
-							<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							<i class="fab fa-facebook-square"></i>
 						</a>
 						<a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $pageTitle; ?>&url=<?php echo $pageURL; ?>">
-							<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							<i class="fab fa-twitter-square"></i>
 						</a>
 						<a target="_blank" href="https://plus.google.com/share?url=<?php echo $pageURL; ?>">
-							<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+							<i class="fab fa-google-plus-square"></i>
 						</a>
 						<a target="_blank" href="https://www.pinterest.com/pin/create/button/?url=<?php echo $pageURL; ?>&media=<?php echo $featuredImage[0]; ?>&description=<?php echo $pageTitle; ?>...">
-							<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+							<i class="fab fa-pinterest-square"></i>
 						</a>
 						<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo $pageURL; ?>">
-							<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+							<i class="fab fa-linkedin-square"></i>
 						</a>
 					</div><!-- /social share -->
 
-					<?php if($featuredImage): ?>
-						<img class="img-responsive" src="<?php echo $featuredImage[0]; ?>" alt="<?php the_title(); ?>">
-					<?php endif; ?>
 					<?php echo apply_filters('the_content', $post->post_content); ?>
 				</div><!-- /main content -->
 			</div><!-- col -->

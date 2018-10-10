@@ -69,7 +69,7 @@ body.mce-content-body { font-family: Helvetica, Arial; }
 /* contact form 7
 -------------------------------------------------------------------*/
 /*
-form.wpcf7-form { font-size: 1.5em; max-width: 600px; }
+form.wpcf7-form { max-width: 600px; }
 form.wpcf7-form h3 { font-size: 1em; margin-top: 20px }
 form.wpcf7-form .field { margin-bottom: 10px; }
 form.wpcf7-form li { font-size: 1em; }

@@ -2,10 +2,10 @@
 <section class="footer-cta py-80 bg-light">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8 text-md-center mx-auto">
+			<div class="col-md-8 text-center mx-auto">
 				<h3>Want to learn more?</h3>
 				<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished typeset text. We will replace this copy when you can give us more info. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida justo in arcu mattis lacinia. Mauris aliquet mi quis diam euismod bland.</p>
-				<a href="/contact" class="btn btn-secondary">Contact Us <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+				<a href="/contact" class="btn btn-secondary">Contact Us <i class="far fa-envelope"></i></a>
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
@@ -15,11 +15,11 @@
 	<div class="container">
 		
 		<div class="row">
-			<div class="col-md-4 contact mb-20">
+			<div class="col-lg-4 contact mb-20">
 				<h4 class="title mb-20">Contact</h4>
 				<div class="row align-items-center mb-2">
 					<div class="col-2 text-center">
-						<i class="display-4 fa fa-map-marker large" aria-hidden="true"></i>
+						<i class="display-4 fas fa-map-marker-alt large" aria-hidden="true"></i>
 					</div>
 					<div class="col-10">
 						<span>
@@ -30,7 +30,7 @@
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
 					<div class="col-2 text-center">
-						<i class="display-4 fa fa-mobile-phone" aria-hidden="true"></i>
+						<i class="display-4 fas fa-phone" aria-hidden="true"></i>
 					</div>
 					<div class="col-10">
 						<span>123-123-1234</span>
@@ -38,7 +38,7 @@
 				</div><!-- /row -->
 				<div class="row align-items-center mb-2">
 					<div class="col-2 text-center">
-						<i class="display-4 fa fa fa-clock-o" aria-hidden="true"></i>
+						<i class="display-4 far fa-clock" aria-hidden="true"></i>
 					</div>
 					<div class="col-10">
 						<span>
@@ -49,23 +49,23 @@
 				</div><!-- /row -->
 			</div><!-- /col -->
 			
-			<div class="col-md-4 social mb-20">
+			<div class="col-lg-4 social mb-20">
 				<h4 class="title mb-20">Social Media</h4>
 				<ul class="list-unstyled">
-					<li class="mb-1"><a href="" target="_blank"><i class="fa fa-facebook-square mr-1" aria-hidden="true"></i> Facebook</a></li>
-					<li class="mb-1"><a href="" target="_blank"><i class="fa fa-twitter-square mr-1" aria-hidden="true"></i> Twitter</a></li>
-					<li class="mb-1"><a href="" target="_blank"><i class="fa fa-instagram mr-1" aria-hidden="true"></i> Instagram</a></li>
-					<li class="mb-1"><a href="" target="_blank"><i class="fa fa-rss-square mr-1" aria-hidden="true"></i> Blog</a></li>
+					<li class="mb-1"><a href="" target="_blank"><i class="fab fa-facebook mr-1" aria-hidden="true"></i> Facebook</a></li>
+					<li class="mb-1"><a href="" target="_blank"><i class="fab fa-twitter-square mr-1" aria-hidden="true"></i> Twitter</a></li>
+					<li class="mb-1"><a href="" target="_blank"><i class="fab fa-instagram mr-1" aria-hidden="true"></i> Instagram</a></li>
+					<li class="mb-1"><a href="" target="_blank"><i class="fas fa-rss-square mr-1" aria-hidden="true"></i> Blog</a></li>
 				</ul>
 			</div><!-- /col -->
 			
-			<div class="col-md-4 news">
+			<div class="col-lg-4 news">
 				<h4 class="title mb-20">Newsletter</h4>
 				<p>Sign up for our newsletter.</p>
 				<form class="form-inline">
 					<div class="form-group">
 						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-						<button type="submit" class="btn btn-primary mx-2">Sign Up</button>
+						<button type="submit" class="btn btn-primary ml-0 ml-sm-2">Sign Up</button>
 					</div>
 				</form>
 			</div><!-- /col -->

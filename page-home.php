@@ -7,8 +7,8 @@
 		<div class="overlay"></div>
 		<div class="hero-content">
 			<h1 class="title">Some Headline Here</h1>
-			<a href="#" class="btn btn-secondary">Some Action <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-			<a href="#" class="btn btn-primary mx-2">Some Action <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+			<a href="#" class="btn btn-secondary">Some Action <i class="fas fa-chevron-right"></i></a>
+			<a href="#" class="btn btn-primary mx-2">Some Action <i class="fas fa-arrow-right"></i></a>
 		</div><!-- /hero content -->
 	</div><!-- /hero bg -->
 
@@ -19,7 +19,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 mx-auto">
-				<div class="text-md-center main-content">
+				<div class="text-center main-content">
 					<h2 class="title">Some Headline</h2>
 					<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished typeset text. We will replace this copy when you can give us more info. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida justo in arcu mattis lacinia. Mauris aliquet mi quis diam euismod bland.</p>
 				</div><!-- /text center -->
@@ -32,28 +32,28 @@
 <section class="buckets pb-80">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg mb-30">
+			<div class="col-lg text-center text-lg-left mb-30">
 				<div class="main-content">
 					<h2 class="title">Title Here</h2>
 					<img class="img-fluid mb-10" src="//placehold.it/768x400">
 					<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished typeset text. We will replace this copy when you can give us more info.</p>
-					<a href="" class="btn btn-primary">Button <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					<a href="" class="btn btn-primary">Button <i class="fas fa-chevron-right"></i></a>
 				</div>
 			</div><!-- /col -->
-			<div class="col-lg mb-30">
+			<div class="col-lg text-center text-lg-left mb-30">
 				<div class="main-content">
 					<h2 class="title">Title Here</h2>
 					<img class="img-fluid mb-10" src="//placehold.it/768x400">
 					<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished typeset text. We will replace this copy when you can give us more info.</p>
-					<a href="" class="btn btn-primary">Button <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					<a href="" class="btn btn-primary">Button <i class="fas fa-chevron-right"></i></a>
 				</div>
 			</div><!-- /col -->
-			<div class="col-lg mb-30">
+			<div class="col-lg text-center text-lg-left mb-30">
 				<div class="main-content">
 					<h2 class="title">Title Here</h2>
 					<img class="img-fluid mb-10" src="//placehold.it/768x400">
 					<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished typeset text. We will replace this copy when you can give us more info.</p>
-					<a href="" class="btn btn-primary">Button <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+					<a href="" class="btn btn-primary">Button <i class="fas fa-chevron-right"></i></a>
 				</div>
 			</div><!-- /col -->
 		</div><!-- /row -->
