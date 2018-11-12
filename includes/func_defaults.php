@@ -68,18 +68,6 @@ function bigcity_client_help_function() {
 	echo '<p>Welcome to the the backend of your website. To the left, you\'ll see different kinds of content to add like Pages, Posts(News Posts), and Media. If you click on Pages, you\'ll be able to view/edit/delete any page and create new pages for the website. Alternatively, if you visit any page of the website logged in and you\'ll see an "Edit Page" link on the top admin bar.</p>
 
 	<hr>
-
-	<p><strong>Need help? Contact Us.</strong></p>
-	<p><a href="http://www.wpbeginner.com/beginners-guide/14-tips-for-mastering-the-wordpress-visual-editor/" target="_blank">How to use the Tiny MCE Editor</a></p>
-	<p>
-		<a href="https://primaxstudio.com/" target="_blank">Primax Studio</a><br>
-		2300 Montana Ave. Suite 102<br>
-		Cincinnati, OH 45211<br>
-		Phone: 513.443.2797
-	</p>
-
-	<hr>
-	
 	
 	<h2>How to add a Blog Post</h2>
 	<ol>
@@ -211,7 +199,7 @@ add_action( 'wp_before_admin_bar_render', 'bigcity_remove_admin_bar_links' );
 
 // edit admin footer text
 function bigcity_admin_footer_text() {
-	echo 'Theme by <a target="_blank" href="https://primaxstudio.com">Primax Studio</a>. Powered by Wordpress.';
+	echo 'Powered by Wordpress.';
 }
 add_filter('admin_footer_text', 'bigcity_admin_footer_text');
 

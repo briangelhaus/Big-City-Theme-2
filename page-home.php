@@ -3,7 +3,7 @@
 
 <section class="hero">
 
-	<div class="hero-bg flex-center" style="background-image: url('//s3.amazonaws.com/scripps-com/ample_admin/attachments/files/000/000/407/original/Cincinnati2.jpg');">
+	<div class="hero-bg d-flex justify-content-center align-items-center" style="background-image: url('//s3.amazonaws.com/scripps-com/ample_admin/attachments/files/000/000/407/original/Cincinnati2.jpg');">
 		<div class="overlay"></div>
 		<div class="hero-content">
 			<h1 class="title">Some Headline Here</h1>

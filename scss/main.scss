@@ -1,30 +1,30 @@
 @import 'variables.scss';
 
 $primary: #007bff;
-$primary-hover: #0e69cc;
+$primary_hover: darken( $primary, 10% );
 
 /* Type
 -------------------------------------------------------------------*/
 body { color: #333; font-family: 'Open Sans', sans-serif; font-size: 14px; }
 
-h1,.title1 { font-size: 25px; }
-h2,.title2 { font-size: 20px; }
-h3,.title3 { font-size: 18px; }
-h4,.title4 { font-size: 16px; }
-a { color: $primary; }
-a:hover { color: $primary-hover; }
+h1,.fs1 { font-size: 25px; }
+h2,.fs2 { font-size: 20px; }
+h3,.fs3 { font-size: 18px; }
+h4,.fs4 { font-size: 16px; }
+a { color: #007bff; }
+a:hover { color: #0e69cc; }
 
 .btn { font-size: 14px; }
 .btn-primary { background-color: $primary; border: none; }
 .btn-primary:hover,
-.btn-primary:focus { background-color: $primary-hover; border: none; box-shadow: none; }
+.btn-primary:focus { background-color: $primary_hover; border: none; box-shadow: none; }
 .btn i { margin-left: 5px; }
 
-@media screen and (min-width: 991px) {
-	h1,.title1 { font-size: 30px; }
-	h2,.title2 { font-size: 25px; }
-	h3,.title3 { font-size: 20px; }
-	h4,.title4 { font-size: 18px; }
+@media screen and (min-width: 992px) {
+	h1,.fs1 { font-size: 30px; }
+	h2,.fs2 { font-size: 25px; }
+	h3,.fs3 { font-size: 20px; }
+	h4,.fs4 { font-size: 18px; }
 	body { font-size: 16px; }
 	.btn { font-size: 16px; }
 }
