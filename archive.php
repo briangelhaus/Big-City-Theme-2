@@ -4,7 +4,7 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-lg-12">
 				<div <?php post_class('main-content'); ?>>
 					<h1>
 						<?php

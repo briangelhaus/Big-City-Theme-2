@@ -4,7 +4,7 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+			<div class="col-lg-8 col-lg-offset-2">
 				<div class="main-content">
 					<h1>Search Results for "<?php echo $_GET['s']; ?>"</h1>
 					<?php if($posts): ?>

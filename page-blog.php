@@ -6,7 +6,7 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-md-3 order-2 order-md-1">
+			<div class="col-lg-3 order-2 order-lg-1">
 				<div class="blog-sidebar">
 					<h3>Categories</h3>
 					<ul>
@@ -18,7 +18,7 @@
 					</ul>
 				</div><!-- /sidebar -->
 			</div><!-- /col -->
-			<div class="col-md-9 order-1 order-md-2">
+			<div class="col-lg-9 order-1 order-lg-2">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1><?php the_title(); ?></h1>
@@ -68,7 +68,7 @@
 				</div><!-- /row -->
 
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-lg-12">
 						<div class="blog-pagination">
 							<?php
 								$big = 999999999; // need an unlikely integer
