@@ -98,7 +98,7 @@
 						</a>
 						<h2 class="post-title"><a href="<?php echo get_permalink($pid); ?>"><?php echo $p->post_title; ?></a></h2>
 						<span class="p post-date"><?php echo get_the_date('', $pid); ?></span>
-						<p><?php echo $content; ?>... <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
+						<p><?php echo $content; ?> <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
 				</div><!-- /col -->
 			<?php endforeach; ?>
 			</div><!-- row -->

@@ -254,3 +254,12 @@ function customize_tinymce($in) {
 	}";
 	return $in;
 }
+
+/*
+// change gutenburg auto save time to something less annoying
+add_filter( 'block_editor_settings', 'jp_block_editor_settings', 10, 2 );
+function jp_block_editor_settings( $editor_settings, $post ) {
+	$editor_settings['autosaveInterval'] = 200; //number of second [default value is 10]
+	return $editor_settings;
+}
+*/

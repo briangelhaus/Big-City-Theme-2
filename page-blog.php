@@ -43,8 +43,7 @@
 						$featuredImageURL = $featuredImage[0];
 						//$cats = get_the_category($pid); // get post cat
 						//$cats = get_the_terms($pid, 'CUSTOM_CAT'); // get custom taxonomy cat
-						$content = apply_filters('the_content', $p->post_content);
-						$content = truncate(strip_tags($content, ''),150);
+						$content = wp_trim_words( $p->post_content, 25, '...' );
 					?>
 					<div class="col-md-4 col-sm-6 post">
 						<a href="<?php echo get_permalink($pid); ?>" class="post-link">

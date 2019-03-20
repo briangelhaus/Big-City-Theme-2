@@ -93,12 +93,3 @@ function bigcity_admin_wysiwyg_styles() {
 }
 add_action( 'admin_init', 'bigcity_admin_wysiwyg_styles' );
 */
-
-// trims teaser text for blog posts
-function truncate($text, $length) {
-	$length = abs((int)$length);
-	if(strlen($text) > $length) {
-		$text = preg_replace("/^(.{1,$length})(\s.*|$)/s", '\\1...', $text);
-	}
-	return($text);
-}

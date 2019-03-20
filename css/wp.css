@@ -1,8 +1,8 @@
 /* wysiwyg editor frontend
 -------------------------------------------------------------------*/
-img.alignright { text-align: right; float: right; margin: 10px 0 0 20px; }
-img.alignleft { text-align: left; float: left; margin: 10px 20px 0 0; }
-img.aligncenter { text-align: center; margin: 0 auto; display: block; }
+.alignright { text-align: right; float: right; margin: 10px 0 0 20px; }
+.alignleft { text-align: left; float: left; margin: 10px 20px 0 0; }
+.aligncenter { text-align: center; margin: 0 auto; display: block; }
 
 blockquote { border-left: 5px solid #ccc; padding-left: 10px; }
 blockquote p { color: #666; font-size: 20px; font-style: italic; }
@@ -19,7 +19,6 @@ blockquote p { color: #666; font-size: 20px; font-style: italic; }
 }
 .wp-caption { max-width: 100% !important; text-align: center; }
 .wp-caption img { margin-bottom: 0 !important; }
-.wp-caption p { font-size: 1.4em; }
 
 
 /* wysiwyg admin backend - turn this on in functions.php
@@ -60,10 +59,14 @@ body.mce-content-body { font-family: Helvetica, Arial; }
 -------------------------------------------------------------------*/
 .gform_wrapper { margin: 0 !important; }
 .gform_wrapper input,
+.gform_wrapper select,
 .gform_wrapper textarea { border: 1px solid #ccc; }
+.gform_wrapper select { margin: 0 !important; height: 37px; }
 .gform_wrapper label { margin-bottom: 0; }
 .gform_wrapper ul li.gfield { margin: 0 0 20px 0 !important; }
 .gform_wrapper .gform_button { background: #000; padding: 10px 20px; color: #fff; border: none; border-radius: 4px; }
+.gform_wrapper .gform_button:hover { background: #222; }
+.gform_wrapper .field_description_below .gfield_description { padding-top: 5px !important; }
 
 
 /* contact form 7
