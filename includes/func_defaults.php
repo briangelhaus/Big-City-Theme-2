@@ -65,7 +65,8 @@ function bigcity_add_dashboard_widgets() {
 }
 add_action( 'wp_dashboard_setup', 'bigcity_add_dashboard_widgets' );
 function bigcity_client_help_function() {
-	echo '<p>Welcome to the the backend of your website. To the left, you\'ll see different kinds of content to add like Pages, Posts(News Posts), and Media. If you click on Pages, you\'ll be able to view/edit/delete any page and create new pages for the website. Alternatively, if you visit any page of the website logged in and you\'ll see an "Edit Page" link on the top admin bar.</p>
+?>
+	<p>Welcome to the the backend of your website. To the left, you\'ll see different kinds of content to add like Pages, Posts(News Posts), and Media. If you click on Pages, you\'ll be able to view/edit/delete any page and create new pages for the website. Alternatively, if you visit any page of the website logged in and you\'ll see an "Edit Page" link on the top admin bar.</p>
 
 	<hr>
 	
@@ -92,7 +93,7 @@ function bigcity_client_help_function() {
 		<li>Click and drag on a menu item to re-order them.</li>
 		<li>Click Save Menu.</li>
 	</ol>
-	';
+<?php
 }
 
 

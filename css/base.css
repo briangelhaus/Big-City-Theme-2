@@ -1,63 +1,81 @@
 /* big city spacers
 -------------------------------------------------------------------*/
 .pb-10 { padding-bottom: 10px; }
+.pb-15 { padding-bottom: 15px; }
 .pb-20 { padding-bottom: 20px; }
 .pb-30 { padding-bottom: 30px; }
 .pb-40 { padding-bottom: 40px; }
+.pb-50 { padding-bottom: 50px; }
 .pb-60 { padding-bottom: 40px; }
 .pb-80 { padding-bottom: 50px; }
 
 .pt-10 { padding-top: 10px; }
+.pt-15 { padding-top: 15px; }
 .pt-20 { padding-top: 20px; }
 .pt-30 { padding-top: 30px; }
 .pt-40 { padding-top: 40px; }
+.pt-50 { padding-top: 40px; }
 .pt-60 { padding-top: 40px; }
 .pt-80 { padding-top: 50px; }
 
 .py-10 { padding-top: 10px; padding-bottom: 10px; }
+.py-15 { padding-top: 15px; padding-bottom: 15px; }
 .py-20 { padding-top: 20px; padding-bottom: 20px; }
 .py-30 { padding-top: 30px; padding-bottom: 30px; }
 .py-40 { padding-top: 40px; padding-bottom: 40px; }
+.py-50 { padding-top: 40px; padding-bottom: 40px; }
 .py-60 { padding-top: 40px; padding-bottom: 40px; }
 .py-80 { padding-top: 50px; padding-bottom: 50px; }
 
 .mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
 .mb-20 { margin-bottom: 20px; }
 .mb-30 { margin-bottom: 30px; }
 .mb-40 { margin-bottom: 40px; }
+.mb-50 { margin-bottom: 40px; }
 .mb-60 { margin-bottom: 40px; }
 .mb-80 { margin-bottom: 50px; }
 
 .mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
 .mt-20 { margin-top: 20px; }
 .mt-30 { margin-top: 30px; }
 .mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 40px; }
 .mt-60 { margin-top: 40px; }
 .mt-80 { margin-top: 50px; }
 
 .my-10 { margin-top: 10px; margin-bottom: 10px; }
+.my-15 { margin-top: 15px; margin-bottom: 15px; }
 .my-20 { margin-top: 20px; margin-bottom: 20px; }
 .my-30 { margin-top: 30px; margin-bottom: 30px; }
 .my-40 { margin-top: 40px; margin-bottom: 40px; }
+.my-50 { margin-top: 40px; margin-bottom: 40px; }
 .my-60 { margin-top: 40px; margin-bottom: 40px; }
 .my-80 { margin-top: 50px; margin-bottom: 50px; }
 
 @media screen and (min-width: 768px) {
+	.pb-50 { padding-bottom: 50px; }
 	.pb-60 { padding-bottom: 60px; }
 	.pb-80 { padding-bottom: 80px; }
 
+	.pt-50 { padding-top: 50px; }
 	.pt-60 { padding-top: 60px; }
 	.pt-80 { padding-top: 80px; }
 
+	.py-50 { padding-top: 50px; padding-bottom: 50px; }
 	.py-60 { padding-top: 60px; padding-bottom: 60px; }
 	.py-80 { padding-top: 80px; padding-bottom: 80px; }
 
+	.mb-50 { margin-bottom: 50px; }
 	.mb-60 { margin-bottom: 60px; }
 	.mb-80 { margin-bottom: 80px; }
 
+	.mt-50 { margin-top: 50px; }
 	.mt-60 { margin-top: 60px; }
 	.mt-80 { margin-top: 80px; }
 
+	.my-50 { margin-top: 50px; margin-bottom: 50px; }
 	.my-60 { margin-top: 60px; margin-bottom: 60px; }
 	.my-80 { margin-top: 80px; margin-bottom: 80px; }
 }
