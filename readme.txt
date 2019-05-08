@@ -38,8 +38,6 @@ SLACK with GIT
 - @bitbucket and invite them
 - /bitbucket connect <your-repository-url> - which is the clone URL
 	- /bitbucket connect https://name@bitbucket.org/company/project-name.git
-- link account
-- run the /bitbucket connect <your-repository-url> again
 - create subscription
 - git push to test it works
 

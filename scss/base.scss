@@ -1,3 +1,224 @@
+/* spacers
+-------------------------------------------------------------------*/
+.pb-10 { padding-bottom: 10px; }
+.pb-15 { padding-bottom: 15px; }
+.pb-20 { padding-bottom: 20px; }
+.pb-30 { padding-bottom: 30px; }
+.pb-40 { padding-bottom: 40px; }
+.pb-50 { padding-bottom: 50px; }
+.pb-60 { padding-bottom: 40px; }
+.pb-80 { padding-bottom: 50px; }
+.pb-100 { padding-bottom: 50px; }
+
+.pt-10 { padding-top: 10px; }
+.pt-15 { padding-top: 15px; }
+.pt-20 { padding-top: 20px; }
+.pt-30 { padding-top: 30px; }
+.pt-40 { padding-top: 40px; }
+.pt-50 { padding-top: 40px; }
+.pt-60 { padding-top: 40px; }
+.pt-80 { padding-top: 50px; }
+.pt-100 { padding-top: 50px; }
+
+.py-10 { padding-top: 10px; padding-bottom: 10px; }
+.py-15 { padding-top: 15px; padding-bottom: 15px; }
+.py-20 { padding-top: 20px; padding-bottom: 20px; }
+.py-30 { padding-top: 30px; padding-bottom: 30px; }
+.py-40 { padding-top: 40px; padding-bottom: 40px; }
+.py-50 { padding-top: 40px; padding-bottom: 40px; }
+.py-60 { padding-top: 40px; padding-bottom: 40px; }
+.py-80 { padding-top: 50px; padding-bottom: 50px; }
+.py-100 { padding-top: 50px; padding-bottom: 50px; }
+
+.mb-10 { margin-bottom: 10px; }
+.mb-15 { margin-bottom: 15px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-50 { margin-bottom: 40px; }
+.mb-60 { margin-bottom: 40px; }
+.mb-80 { margin-bottom: 50px; }
+.mb-100 { margin-bottom: 50px; }
+
+.mt-10 { margin-top: 10px; }
+.mt-15 { margin-top: 15px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 40px; }
+.mt-60 { margin-top: 40px; }
+.mt-80 { margin-top: 50px; }
+.mt-100 { margin-top: 50px; }
+
+.my-10 { margin-top: 10px; margin-bottom: 10px; }
+.my-15 { margin-top: 15px; margin-bottom: 15px; }
+.my-20 { margin-top: 20px; margin-bottom: 20px; }
+.my-30 { margin-top: 30px; margin-bottom: 30px; }
+.my-40 { margin-top: 40px; margin-bottom: 40px; }
+.my-50 { margin-top: 40px; margin-bottom: 40px; }
+.my-60 { margin-top: 40px; margin-bottom: 40px; }
+.my-80 { margin-top: 50px; margin-bottom: 50px; }
+.my-100 { margin-top: 50px; margin-bottom: 50px; }
+
+@media screen and (min-width: 768px) {
+	.pb-50 { padding-bottom: 50px; }
+	.pb-60 { padding-bottom: 60px; }
+	.pb-80 { padding-bottom: 80px; }
+	.pb-100 { padding-bottom: 100px; }
+
+	.pt-50 { padding-top: 50px; }
+	.pt-60 { padding-top: 60px; }
+	.pt-80 { padding-top: 80px; }
+	.pt-100 { padding-top: 100px; }
+
+	.py-50 { padding-top: 50px; padding-bottom: 50px; }
+	.py-60 { padding-top: 60px; padding-bottom: 60px; }
+	.py-80 { padding-top: 80px; padding-bottom: 80px; }
+	.py-100 { padding-top: 100px; padding-bottom: 100px; }
+
+	.mb-50 { margin-bottom: 50px; }
+	.mb-60 { margin-bottom: 60px; }
+	.mb-80 { margin-bottom: 80px; }
+	.mb-100 { margin-bottom: 100px; }
+
+	.mt-50 { margin-top: 50px; }
+	.mt-60 { margin-top: 60px; }
+	.mt-80 { margin-top: 80px; }
+	.mt-100 { margin-top: 100px; }
+
+	.my-50 { margin-top: 50px; margin-bottom: 50px; }
+	.my-60 { margin-top: 60px; margin-bottom: 60px; }
+	.my-80 { margin-top: 80px; margin-bottom: 80px; }
+	.my-100 { margin-top: 100px; margin-bottom: 100px; }
+}
+
+
+/* mobile nav
+-------------------------------------------------------------------*/
+.mobile-nav {
+	background-color: rgba(0, 0, 0, .9);
+	width: 100%;
+	right: -100%;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	height: 100%;
+	padding: 11px 0 0 0;
+	display: none;
+	overflow-y: auto;
+}
+
+.mobile-nav a.mobile-close {
+	font-weight: bold;
+	float: right;
+	color: #fff;
+	font-size: 40px;
+	color: #fff;
+	padding: 0 5px;
+}
+
+.mobile-nav a.mobile-close:hover {
+	text-decoration: none;
+	opacity: .6;
+	text-decoration: none;
+}
+
+.mobile-nav ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.mobile-nav ul.menu {
+	padding: 0;
+	clear: both;
+}
+
+.mobile-nav ul.sub-menu { padding: 0; }
+
+.mobile-nav ul.sub-menu a { padding: 10px 10px 10px 40px; }
+
+.mobile-nav ul a {
+	color: #fff;
+	padding: 15px 10px;
+	display: block;
+	border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.mobile-nav ul a:before {
+	content: "\f105";
+	font-family: 'Font Awesome 5 Free';
+	margin-right: 10px;
+	color: #999;
+	font-weight: 900;
+}
+
+.mobile-nav ul a:hover {
+	background-color: rgba(255, 255, 255, .1);
+	text-decoration: none;
+}
+
+.mobile-nav form input {
+	margin-top: 20px;
+	width: 100% !important;
+}
+
+@media screen and (min-width: 992px) {
+	.mobile-nav {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.admin-bar .mobile-nav {
+		margin-top: 46px;
+	}
+}
+
+
+/* bootstrap nav overrides
+-------------------------------------------------------------------*/
+button:focus { outline: none; }
+
+/* nav */
+.navbar { padding: 0; }
+button.navbar-toggler {
+	cursor: pointer;
+	border: none;
+	font-size: 1.5rem;
+	padding: 0;
+}
+
+button.navbar-toggler .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(70,70,70, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/*.dropdown */
+ul.dropdown-menu {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+ul.dropdown-menu a {
+	display: block !important;
+	padding: 10px;
+	min-width: 200px;
+}
+
+ul.dropdown-menu a:hover {
+	background: rgba(100, 100, 100, .1);
+	text-decoration: none;
+}
+
+/* makes nav work on hover for desktop, click for tablets */
+@media only screen and (min-width:992px) {
+	.dropdown:hover>.dropdown-menu {
+		display: block;
+	}
+}
+
+
 /* wysiwyg editor frontend
 -------------------------------------------------------------------*/
 .alignright { text-align: right; float: right; margin: 10px 0 0 20px; }

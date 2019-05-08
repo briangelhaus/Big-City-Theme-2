@@ -57,7 +57,7 @@ get_header( 'shop' ); ?>
 		
 <?php include($_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/bigcity/includes/banner.php'); ?>
 
-<div class="page-content">
+<section class="basic-content py-40">
 	<div class="container">
 		
 	<?php wc_print_notices(); ?>
@@ -73,15 +73,15 @@ get_header( 'shop' ); ?>
 	?>
 
 	<div class="row">
+		
+		<div class="col-lg-3">
+			<?php get_sidebar(); ?>
+		</div><!-- /col -->
 
-		<div class="col-md-9 col-md-push-3">
+		<div class="col-lg-9">
 
 		<?php if(is_shop()): ?>
-			<h1 class="page-title">Featured Products</h1>
-			<?php if (get_current_user_id() == 1): ?>
-				<p>Showing <?php echo count($products); ?> products</p>
-				<p><a href="/wp-admin/post.php?post=9&action=edit">Edit Page</a></p>
-			<?php endif; ?>
+			<h1>Featured Products</h1>
 		<?php else: ?>
 			<h1><?php echo woocommerce_page_title(); ?></h1>
 		<?php endif; ?>
@@ -94,7 +94,7 @@ get_header( 'shop' ); ?>
 
 		<?php if ( $products ) : ?>
 		<div class="product-container">
-			<div class="row img-hover">
+			<div class="row">
 
 			<?php
 				$i = 0;
@@ -108,7 +108,7 @@ get_header( 'shop' ); ?>
 				$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($pid), 'medium' );
 			 ?>
 
-			<div class="col-sm-6 col-md-4 product">
+			<div class="col-md-6 col-lg-4 product">
 				<a href="<?php echo get_the_permalink($pid); ?>">
 					<div class="product-image">
 						<?php if($featuredImage): ?>
@@ -117,7 +117,7 @@ get_header( 'shop' ); ?>
 							<img class="img-responsive" src="/wp-content/plugins/woocommerce/assets/images/placeholder.png" alt="" />
 						<?php endif; ?>
 					</div><!-- /no image -->
-					<h2 class="title3 product-title"><?php echo get_the_title($pid); ?></h2>
+					<h2 class="fs4 product-title"><?php echo get_the_title($pid); ?></h2>
 					
 					<?php if($review_average[0] > 0): ?>
 					<div class="star-rating">
@@ -126,16 +126,10 @@ get_header( 'shop' ); ?>
 					</div><!-- /star rating -->
 					<?php endif; ?>
 					
-					<span class="p product-price"><?php echo $wcproduct->get_price_html(); ?></span>
+					<span class="product-price"><?php echo $wcproduct->get_price_html(); ?></span>
 				</a>
 			</div><!-- /col product -->
 
-			<?php if($i % 4 == 0): ?>
-
-			</div><!-- /row -->
-
-			<div class="row img-hover">
-			<?php endif; ?>
 			<?php endforeach; ?>
 			</div><!-- /row -->
 
@@ -146,9 +140,6 @@ get_header( 'shop' ); ?>
 
 		<?php endif; ?>
 
-		</div><!-- /col 9 -->
-		<div class="col-md-3 col-md-pull-9 sidebar">
-			<?php get_sidebar(); ?>
 		</div><!-- /col -->
 	</div><!-- /row -->
 
@@ -162,6 +153,6 @@ get_header( 'shop' ); ?>
 	?>
 	
 	</div><!-- /container -->
-</div><!-- /page content -->
+</section><!-- /basic content -->
 
 <?php get_footer( 'shop' ); ?>

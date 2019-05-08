@@ -1,5 +1,5 @@
 
-<section class="footer-cta py-80 bg-light">
+<section class="footer-cta py-40 bg-light">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 text-center mx-auto">
@@ -11,7 +11,7 @@
 	</div><!-- /container -->
 </section><!-- /footer-cta -->
 
-<footer class="main py-40">
+<footer class="main bg-dark py-40 text-white-container">
 	<div class="container">
 		
 		<div class="row">

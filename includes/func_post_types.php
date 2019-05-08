@@ -40,3 +40,7 @@ function bigcity_posttype_ITEM() {
 
 add_action( 'init', 'bigcity_posttype_ITEM', 0 );
 */
+
+// flush permalink cache
+// ONLY DO THIS ONCE then comment it out again. This is bad if loaded on every page.
+//flush_rewrite_rules();

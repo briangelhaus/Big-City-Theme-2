@@ -16,14 +16,13 @@
 	$related_posts = $query->posts;
 */
 
-
 /* if you want to show next or prev post only
 	$next_post = get_previous_post();
 	$prev_post = get_next_post();
 */
 ?>
 
-<div class="page-content">
+<section class="basic-content py-40">
 	<div class="container">
 
 		<div class="row">
@@ -84,28 +83,26 @@
 				$pid = $p->ID;
 				$featuredImage = wp_get_attachment_image_src( get_post_thumbnail_id($pid), 'medium' );
 				$featuredImageURL = $featuredImage[0];
-				//$cats = get_the_category($pid);
-				$content = apply_filters('the_content', $p->post_content);
-				$content = truncate(strip_tags($content, ''),150);
+				$content = wp_trim_words( $p->post_content, 25, '...' );
 			?>
-				<div class="col-sm-4 post">
-					<a href="<?php echo get_permalink($pid); ?>" class="post-link">
+				<div class="col-md-6 post">
+					<a href="<?php echo get_permalink($pid); ?>" class="post-link d-block mb-10">
 						<?php if($featuredImage): ?>
-							<img class="post-image img-responsive" src="<?php echo $featuredImageURL; ?>" alt="<?php echo get_the_title($pid); ?>">
+							<img class="img-fluid" src="<?php echo $featuredImageURL; ?>" alt="<?php echo $p->post_title; ?>">
 						<?php else: ?>
-							<img class="post-image img-responsive" src="http://placehold.it/600x450"></a>
+							<img class="img-fluid" src="http://placehold.it/600x450"></a>
 						<?php endif; ?>
-						</a>
-						<h2 class="post-title"><a href="<?php echo get_permalink($pid); ?>"><?php echo $p->post_title; ?></a></h2>
-						<span class="p post-date"><?php echo get_the_date('', $pid); ?></span>
-						<p><?php echo $content; ?> <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
-				</div><!-- /col -->
+						<h2 class="fs3"><?php echo $p->post_title; ?></h2>
+					</a>
+					<em class="post-date d-block mb-10"><?php echo get_the_date('', $pid); ?></em>
+					<p><?php echo $content; ?>... <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
+				</div>
 			<?php endforeach; ?>
 			</div><!-- row -->
 		<?php endif; ?>
 */ ?>
 
 	</div><!-- /container -->
-</div><!-- /page content -->
+</section><!-- /basic content -->
 
 <?php get_footer(); ?>

@@ -1,29 +1,30 @@
 <?php get_header(); ?>
 
-<div class="page-content">
+<section class="basic-content py-40">
 	<div class="container">
-
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<div class="main-content">
-					<h1>Search Results for "<?php echo $_GET['s']; ?>"</h1>
-					<?php if($posts): ?>
-						<?php
-							foreach($posts as $p):
-							$content = apply_filters('the_content', $p->post_content);
-							$content = truncate(strip_tags($content, ''),200);
-						?>
+			<div class="col-xl-10 mx-auto">
+				<h1>Search Results for "<?php echo $_GET['s']; ?>"</h1>
+				
+				<div class="row">
+				<?php if($posts): ?>
+					<?php
+						foreach($posts as $p):
+						$content = apply_filters('the_content', $p->post_content);
+						$content = wp_trim_words( $content, 25, '...' );
+					?>
+						<div class="col-lg-12 search-result">
 							<h3><a href="<?php echo get_permalink($p->ID); ?>"><?php echo $p->post_title; ?></a></h3>
 							<p><?php echo $content; ?></p>
-						<?php endforeach; ?>
-					<?php else: ?>
-						<p>No results found.</p>
-					<?php endif; ?>
-				</div><!-- /main-content -->
+						</div>
+					<?php endforeach; ?>
+				<?php else: ?>
+					<p>No results found.</p>
+				<?php endif; ?>
+				</div><!-- /row -->
 			</div><!-- col -->
 		</div><!-- row -->
-
 	</div><!-- /container -->
-</div><!-- /page content -->
+</section><!-- /basic content -->
 
 <?php get_footer(); ?>

@@ -2,19 +2,15 @@
 
 <?php include('includes/banner.php'); ?>
 
-<div class="page-content">
+<section class="basic-content py-40">
 	<div class="container">
-
 		<div class="row">
 			<div class="col-lg-12">
-				<div <?php post_class('main-content'); ?>>
-					<h1><?php the_title(); ?></h1>
-					<?php echo apply_filters('the_content', $post->post_content); ?>
-				</div><!-- /main content -->
+				<h1><?php the_title(); ?></h1>
+				<?php echo apply_filters('the_content', $post->post_content); ?>
 			</div><!-- col -->
 		</div><!-- row -->
-
 	</div><!-- /container -->
-</div><!-- /page content -->
+</section><!-- /basic content -->
 
 <?php get_footer(); ?>
