@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xl-10 mx-auto">
-				<h1>Search Results for "<?php echo $_GET['s']; ?>"</h1>
+				<h1>Search Results for "<?php echo get_search_query(); ?>"</h1>
 				
 				<div class="row">
 				<?php if($posts): ?>
