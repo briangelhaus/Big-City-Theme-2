@@ -7,7 +7,7 @@ function bigcity_wrapper_end() { echo ''; }
 
 // hide notices like add to cart so we can display them where we want
 remove_action( 'woocommerce_before_shop_loop', 'wc_print_notices', 10 ); /*Archive Product*/
-remove_action( 'woocommerce_before_single_product', 'wc_print_notices', 10 ); /*Single Product*/
+remove_action( 'woocommerce_before_single_product', 'wc_print_notices', 120 ); /*Single Product*/
 
 add_action( 'after_setup_theme', 'bigcity_woocommerce_support' );
 function bigcity_woocommerce_support() {
