@@ -15,33 +15,30 @@
 	<div class="container">
 		
 		<div class="row">
-			<div class="col-lg-4 contact mb-20">
+			
+			<div class="col-lg-4 contact mb-20 text-center text-lg-left">
 				<h4 class="title mb-20">Contact</h4>
-				<div class="row align-items-center mb-2">
-					<div class="col-2 text-center">
-						<i class="display-4 fas fa-map-marker-alt large" aria-hidden="true"></i>
-					</div>
-					<div class="col-10">
-						<span>
+				<div class="row mb-3">
+					<div class="col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+						<i class="display-4 fas fa-map-marker-alt mr-3" aria-hidden="true"></i>
+						<span class="text-left">
 							123 Main St.<br>
 							Cincinnati, Ohio 45248
 						</span>
 					</div>
 				</div><!-- /row -->
-				<div class="row align-items-center mb-2">
-					<div class="col-2 text-center">
-						<i class="display-4 fas fa-phone" aria-hidden="true"></i>
-					</div>
-					<div class="col-10">
-						<span>123-123-1234</span>
+				<div class="row mb-3">
+					<div class="col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+						<i class="display-4 fas fa-phone mr-3" aria-hidden="true"></i>
+						<span class="text-left">
+							<span>123-123-1234</span>
+						</span>
 					</div>
 				</div><!-- /row -->
-				<div class="row align-items-center mb-2">
-					<div class="col-2 text-center">
-						<i class="display-4 far fa-clock" aria-hidden="true"></i>
-					</div>
-					<div class="col-10">
-						<span>
+				<div class="row mb-3">
+					<div class="col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+						<i class="display-4 far fa-clock mr-3" aria-hidden="true"></i>
+						<span class="text-left">
 							Mon-Fri: 9am - 5pm<br>
 							Sat: 9am - 1pm
 						</span>
