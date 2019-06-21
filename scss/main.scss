@@ -67,12 +67,15 @@ a { color: $primary; }
 
 /* Header
 -------------------------------------------------------------------*/
-header.main .logo img { width: 125px; }
-header.main ul.nav li a { 
-	display: inline-block; 
-	font-size: 16px; 
-	color: #333; 
-	padding: 10px; 
+header.main {
+	.logo img { width: 125px; }
+	
+	ul.nav li a { 
+		display: inline-block; 
+		font-size: 16px; 
+		color: #333; 
+		padding: 10px;
+	} 
 }
 
 

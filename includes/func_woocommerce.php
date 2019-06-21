@@ -84,11 +84,12 @@ function handler_function_name($message, $product_id) {
 // https://wordpress.org/plugins/wc-speed-drain-repair
 add_action( 'wp_enqueue_scripts', 'child_manage_woocommerce_styles', 99 );
 function child_manage_woocommerce_styles() {
-    //remove generator meta tag
-    remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
-  
+	
     //first check that woo exists to prevent fatal errors
     if ( function_exists( 'is_woocommerce' ) ) {
+	    //remove generator meta tag
+	    remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
+  
         //dequeue scripts and styles
         if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
             wp_dequeue_style( 'woocommerce_frontend_styles' );

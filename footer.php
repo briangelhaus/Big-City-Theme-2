@@ -16,10 +16,10 @@
 		
 		<div class="row">
 			
-			<div class="col-lg-4 contact mb-20 text-center text-lg-left">
+			<div class="col-lg-4 contact mb-20">
 				<h4 class="title mb-20">Contact</h4>
 				<div class="row mb-3">
-					<div class="col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+					<div class="col-12 d-flex align-items-center">
 						<i class="display-4 fas fa-map-marker-alt mr-3" aria-hidden="true"></i>
 						<span class="text-left">
 							123 Main St.<br>
@@ -28,7 +28,7 @@
 					</div>
 				</div><!-- /row -->
 				<div class="row mb-3">
-					<div class="col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+					<div class="col-12 d-flex align-items-center">
 						<i class="display-4 fas fa-phone mr-3" aria-hidden="true"></i>
 						<span class="text-left">
 							<span>123-123-1234</span>
@@ -36,7 +36,7 @@
 					</div>
 				</div><!-- /row -->
 				<div class="row mb-3">
-					<div class="col-12 d-flex align-items-center justify-content-center justify-content-lg-start">
+					<div class="col-12 d-flex align-items-center">
 						<i class="display-4 far fa-clock mr-3" aria-hidden="true"></i>
 						<span class="text-left">
 							Mon-Fri: 9am - 5pm<br>
