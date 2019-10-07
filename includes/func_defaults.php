@@ -18,6 +18,16 @@ function bigcity_remove_admin_pages(){
 }
 add_action('admin_menu', 'bigcity_remove_admin_pages');
 
+// add support for SVG and other type of uploads
+/*
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ($existing_mimes) {
+	$existing_mimes['svg'] = 'image/svg+xml';
+	$existing_mimes['eps'] = 'application/postscript';
+	return $existing_mimes;
+}
+*/
+
 // remove wordpress default image sizes to save disk space
 function bigcity_remove_default_image_sizes( $sizes) {
 	// we're using so keep

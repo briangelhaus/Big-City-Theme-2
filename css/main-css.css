@@ -1,13 +1,10 @@
-@import "bootstrap_custom.scss";
-@import 'variables.scss';
-@import 'base.scss';
-
-/* Type
+/* type
 -------------------------------------------------------------------*/
 body { 
 	color: #333; 
 	font-size: 14px; 
-	@include lg { font-size: 16px; }
+	line-height: 1.5;
+	font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 { font-family: 'Helvetica', 'Arial', sans-serif; }
@@ -17,7 +14,6 @@ h1,
 .fs1-container h2, 
 .fs1-container h3 { 
 	font-size: 30px; 
-	@include lg { font-size: 40px; }
 }
 
 h2,
@@ -25,7 +21,6 @@ h2,
 .fs2-container h2, 
 .fs2-container h3 { 
 	font-size: 25px; 
-	@include lg { font-size: 35px; }
 }
 
 h3,
@@ -33,7 +28,6 @@ h3,
 .fs3-container h2, 
 .fs3-container h3 {
 	font-size: 20px; 
-	@include lg { font-size: 30px; }
 }
 
 h4,
@@ -41,21 +35,42 @@ h4,
 .fs4-container h2, 
 .fs4-container h3 { 
 	font-size: 16px; 
-	@include lg { font-size: 20px; }
 }
 
 .btn { 
 	font-size: 14px; 
-	@include lg { font-size: 16px; }
-	i { margin-left: 5px; }
+}
+.btn i { margin-left: 5px; }
+
+@media screen and (min-width: 992px) {	
+	body { font-size: 16px; }
+
+	h1,
+	.fs1,
+	.fs1-container h2, 
+	.fs1-container h3 { font-size: 40px; }
+	
+	h2,
+	.fs2,
+	.fs2-container h2, 
+	.fs2-container h3 { font-size: 35px; }
+	
+	h3,
+	.fs3,
+	.fs3-container h2, 
+	.fs3-container h3 { { font-size: 40px; }
+	
+	h4,
+	.fs4, 
+	.fs4-container h2, 
+	.fs4-container h3 { font-size: 20px; }
+	
+	.btn { font-size: 16px; }
 }
 
-a { color: $primary; }
-
-
-/* Site Wide
+/* site wide
 -------------------------------------------------------------------*/
-.white { color: $white; }
+.white { color: #fff; }
 .text-white-container * { color: #fff; }
 
 .bg-image {
@@ -66,30 +81,26 @@ a { color: $primary; }
 }
 
 
-/* Header
+/* header
 -------------------------------------------------------------------*/
-header.main {
-	.logo img { width: 125px; }
+header.main .logo img { width: 125px; }
 	
-	ul.nav li a { 
-		display: inline-block; 
-		font-size: 16px; 
-		color: #333; 
-		padding: 10px;
-	} 
-}
+header.main ul.nav li a { 
+	display: inline-block; 
+	font-size: 16px; 
+	color: #333; 
+	padding: 10px;
+} 
 
 
-/* Home
+/* home
 -------------------------------------------------------------------*/
-.hero {
+.hero { position: relative; }
+.hero .hero-content {
+	width: 400px;
+	text-align: center;
 	position: relative;
-	.hero-content {
-		width: 400px;
-		text-align: center;
-		position: relative;
-		z-index: 15;
-	}
+	z-index: 15;
 }
 
 .overlay {
@@ -102,44 +113,22 @@ header.main {
 	z-index: 10;
 }
 
-
-/* Single Post
--------------------------------------------------------------------*/
-.social-share { 
-	margin: 0 0 20px 0; 
-	a { 
-		font-size: 28px; 
-		color: #333; 
-		margin-left: 8px; 
-		position: relative; 
-		top: 4px; 
-	}
-	a:hover { text-decoration: none; opacity: .7; }
-	.social-share-text { font-size: 15px; }
-}
-
-
-/* Search
+/* search
 -------------------------------------------------------------------*/
 .search-result {
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 25px;
 	margin-bottom: 25px;
-	.title { margin-bottom: 5px; }
-	em {
-		display: block;
-		margin-bottom: 5px;
-	}
-	p { margin: 0; }
 }
+.search-result em {
+	display: block;
+	margin-bottom: 5px;
+}
+.search-result .title { margin-bottom: 5px; }
+.search-result p { margin: 0; }
 
 
-/* Footer
+/* footer
 -------------------------------------------------------------------*/
-footer.main {
-	.copyright { 
-		font-size: 12px; 
-		a { text-decoration: underline; }
-	}
-}
-
+footer.main .copyright { font-size: 12px; }
+footer.main .copyright a { text-decoration: underline; }

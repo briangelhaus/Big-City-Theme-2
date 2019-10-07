@@ -28,7 +28,7 @@
 					?>
 				</ul>
 				<form class="form-inline" action="/" method="get">
-					<input class="form-control" type="text" name="s" id="search" placeholder="Search for a Product..." value="<?php the_search_query(); ?>" />
+					<input class="form-control" type="text" name="s" id="search" placeholder="Search..." value="<?php the_search_query(); ?>" />
 				</form>
 			</div>
 		</div><!-- /row -->

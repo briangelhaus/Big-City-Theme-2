@@ -48,7 +48,7 @@
 							<h2 class="fs3"><?php echo $p->post_title; ?></h2>
 						</a>
 						<em class="post-date d-block mb-10"><?php echo get_the_date('', $pid); ?></em>
-						<p><?php echo $content; ?>... <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
+						<p><?php echo $content; ?> <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
 					</div>
 					<?php endforeach; ?>
 				</div><!-- /row -->

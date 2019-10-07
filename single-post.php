@@ -38,14 +38,11 @@
 						<a target="_blank" href="https://twitter.com/intent/tweet?text=<?php echo $pageTitle; ?>&url=<?php echo $pageURL; ?>">
 							<i class="fab fa-twitter-square"></i>
 						</a>
-						<a target="_blank" href="https://plus.google.com/share?url=<?php echo $pageURL; ?>">
-							<i class="fab fa-google-plus-square"></i>
-						</a>
 						<a target="_blank" href="https://www.pinterest.com/pin/create/button/?url=<?php echo $pageURL; ?>&media=<?php echo $featuredImage[0]; ?>&description=<?php echo $pageTitle; ?>...">
 							<i class="fab fa-pinterest-square"></i>
 						</a>
 						<a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo $pageURL; ?>">
-							<i class="fab fa-linkedin-square"></i>
+							<i class="fab fa-linkedin"></i>
 						</a>
 					</div><!-- /social share -->
 
