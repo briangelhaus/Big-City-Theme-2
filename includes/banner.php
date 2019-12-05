@@ -56,16 +56,3 @@
 		<?php endif; ?>
 	</div><!-- /hero content -->
 </section>
-
-<?php /*
-	<section class="hero">
-	<div class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('//s3.amazonaws.com/scripps-com/ample_admin/attachments/files/000/000/407/original/Cincinnati2.jpg');">
-		<div class="overlay"></div>
-		<div class="hero-content">
-			<h1 class="fs1 white">Some Headline Here</h1>
-			<a href="#" class="btn btn-secondary">Some Action <i class="fas fa-chevron-right"></i></a>
-			<a href="#" class="btn btn-primary mx-2">Some Action <i class="fas fa-arrow-right"></i></a>
-		</div><!-- /hero content -->
-	</div><!-- /hero bg -->
-</section><!-- /hero -->
-*/ ?>
