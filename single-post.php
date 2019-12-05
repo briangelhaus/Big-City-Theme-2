@@ -22,13 +22,14 @@
 */
 ?>
 
+<?php include('includes/banner.php'); ?>
+
 <section class="basic-content py-40">
 	<div class="container">
 
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2">
 				<div <?php post_class('main-content'); ?>>
-					<h1><?php the_title(); ?></h1>
 
 					<div class="social-share">
 						<span class="social-share-text">SHARE: </span>
@@ -89,11 +90,11 @@
 						<?php else: ?>
 							<img class="img-fluid" src="http://placehold.it/600x450"></a>
 						<?php endif; ?>
-						<h2 class="fs3"><?php echo $p->post_title; ?></h2>
+						<h2 class="fs4"><?php echo $p->post_title; ?></h2>
 					</a>
 					<em class="post-date d-block mb-10"><?php echo get_the_date('', $pid); ?></em>
-					<p><?php echo $content; ?>... <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
-				</div>
+					<p><?php echo $content; ?> <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
+				</div><!-- /post -->
 			<?php endforeach; ?>
 			</div><!-- row -->
 		<?php endif; ?>

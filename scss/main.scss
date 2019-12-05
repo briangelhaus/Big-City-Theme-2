@@ -1,5 +1,5 @@
-@import "bootstrap_custom.scss";
 @import 'variables.scss';
+@import "bootstrap_custom.scss";
 @import 'base.scss';
 
 /* Type
@@ -10,7 +10,7 @@ body {
 	@include lg { font-size: 16px; }
 }
 
-h1,h2,h3,h4,h5,h6 { font-family: 'Helvetica', 'Arial', sans-serif; }
+h1,h2,h3,h4,h5,h6 { font-family: 'Open Sans', 'Helvetica', sans-serif; }
 
 h1,
 .fs1,
@@ -52,17 +52,8 @@ h4,
 
 a { color: $primary; }
 
-
-/* Site Wide
--------------------------------------------------------------------*/
-.white { color: $white; }
-.text-white-container * { color: #fff; }
-
-.bg-image {
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 600px;
+.basic-content {
+	
 }
 
 
@@ -80,16 +71,49 @@ header.main {
 }
 
 
-/* Home
+/* Site Wide
 -------------------------------------------------------------------*/
+.white { color: $white; }
+.text-white-container * { color: #fff; }
+
+
 .hero {
 	position: relative;
+	@include lg {		
+		display: flex;
+		align-items: center;
+	}
+	.bg-image {
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-height: 300px;
+		width: 100%;
+	}
 	.hero-content {
-		width: 400px;
+		width: 100%;
 		text-align: center;
 		position: relative;
-		z-index: 15;
+		padding: 20px 0 0 0;
+		h1 {
+			color: #333;
+			margin: 0;
+			@include lg {
+				color: #fff;
+			}
+		}
+		@include lg {
+			position: absolute;
+			z-index: 15;
+		}
 	}
+}
+
+
+/* Home
+-------------------------------------------------------------------*/
+.home .hero {
+	.bg-image { min-height: 600px; }
 }
 
 .overlay {

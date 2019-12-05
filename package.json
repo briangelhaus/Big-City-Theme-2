@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "browser-sync start --proxy 'local.bigcity2.com' --files 'css/*.css' './*.php' 'woocommerce/*.php'",
+    "server": "browser-sync start --proxy 'local.bigcity2.com' --files 'css/*.css' './*.php' 'woocommerce/*.php' 'includes/*.php'",
     "watch:sass": " onchange 'scss/*.scss' './*.php' -- npm run sass ",
     "sass": "node-sass --include-path scss scss/main.scss  css/main.css --output-style compact && npm run autoprefix",
     "autoprefix": "postcss --use autoprefixer -b 'last 5 versions' css/main.css -d css --map",

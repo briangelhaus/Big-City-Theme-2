@@ -11,12 +11,6 @@
 			</div><!-- /col -->
 			
 			<div class="col-lg-9 order-1 order-lg-2">
-				
-				<div class="row">
-					<div class="col-sm-12">
-						<h1><?php the_title(); ?></h1>
-					</div><!-- col -->
-				</div><!-- row -->
 
 				<div class="row blog-posts">
 					<?php
@@ -45,11 +39,11 @@
 							<?php else: ?>
 								<img class="img-fluid" src="http://placehold.it/600x450"></a>
 							<?php endif; ?>
-							<h2 class="fs3"><?php echo $p->post_title; ?></h2>
+							<h2 class="fs4"><?php echo $p->post_title; ?></h2>
 						</a>
 						<em class="post-date d-block mb-10"><?php echo get_the_date('', $pid); ?></em>
 						<p><?php echo $content; ?> <a href="<?php echo get_permalink($pid); ?>" class="post-read-more">Read More</a></p>
-					</div>
+					</div><!-- /post -->
 					<?php endforeach; ?>
 				</div><!-- /row -->
 
