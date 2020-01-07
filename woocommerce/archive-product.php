@@ -153,6 +153,6 @@ get_header( 'shop' ); ?>
 	?>
 	
 	</div><!-- /container -->
-</section><!-- /basic content -->
+</section><!-- /shop content -->
 
 <?php get_footer( 'shop' ); ?>
