@@ -8,6 +8,7 @@ OPTIONAL - rename big_city theme to your own them name
 USING THEME
 1- add a menu called "primary" in the admin
 2- add a new page called home and set it to default front page in reading settings
+3- create a style guide page in admin to view the default style guide. you'll want to add on to this.
 
 
 NO WOOCOMMERCE?
