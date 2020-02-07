@@ -3,9 +3,11 @@
 	// how custom banners work
 	// 1. create a ACF image field called "banner", return as image url, and place it on pages, posts and categories or whereever you need it
 	
-	// if its a category page and not the woocommerce shop page(WP counts the shop page as an archive, even though its a page)
-	if(is_archive() && !is_shop()){
+	// if its a category archive page and not the woocommerce shop page(WP counts the shop page as an archive, even though its a page)
+	//if(is_archive() && !is_shop()){ // if your using woocommerce, enable this. otherwise delete
+	if(is_archive()){
 		$cat = get_queried_object();
+		$title = $cat->name;
 		$acfID = $cat->taxonomy.'_'.$cat->term_id;
 		$banner = get_field('banner',$acfID);
 		//$banner = $banner['url']; // if ACF image field returns array
@@ -40,9 +42,11 @@
 		<?php else: ?>
 			<h1 class="fs1">
 				<?php  					
+/* // if you're using woocommerce, enable this. otherwise delete
 					if(is_shop()){ // woocommerce shop page is unique
 						echo 'Shop Products';
-					}elseif(is_archive()){
+					}else
+*/if(is_archive()){
 						echo $cat->name;
 					}elseif (is_category()){
 						single_cat_title();

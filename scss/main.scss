@@ -4,9 +4,9 @@
 
 /* Type
 -------------------------------------------------------------------*/
-body { 
-	color: #333; 
-	font-size: 14px; 
+body {
+	color: #333;
+	font-size: 14px;
 	@include lg { font-size: 16px; }
 }
 
@@ -14,38 +14,46 @@ h1,h2,h3,h4,h5,h6 { font-family: 'Open Sans', 'Helvetica', sans-serif; }
 
 h1,
 .fs1,
-.fs1-container h2, 
-.fs1-container h3 { 
-	font-size: 30px; 
+.fs1-container h2,
+.fs1-container h3 {
+	font-size: 30px;
 	@include lg { font-size: 40px; }
 }
 
 h2,
 .fs2,
-.fs2-container h2, 
-.fs2-container h3 { 
-	font-size: 25px; 
+.fs2-container h2,
+.fs2-container h3 {
+	font-size: 25px;
 	@include lg { font-size: 35px; }
 }
 
 h3,
 .fs3,
-.fs3-container h2, 
+.fs3-container h2,
 .fs3-container h3 {
-	font-size: 20px; 
+	font-size: 20px;
 	@include lg { font-size: 30px; }
 }
 
 h4,
-.fs4, 
-.fs4-container h2, 
-.fs4-container h3 { 
-	font-size: 16px; 
+.fs4,
+.fs4-container h2,
+.fs4-container h3 {
+	font-size: 16px;
 	@include lg { font-size: 20px; }
 }
 
-.btn { 
-	font-size: 14px; 
+h5,
+.fs5,
+.fs5-container h2,
+.fs5-container h3 {
+	font-size: 15px;
+	@include lg { font-size: 18px; }
+}
+
+.btn {
+	font-size: 14px;
 	@include lg { font-size: 16px; }
 	i { margin-left: 5px; }
 }
@@ -53,7 +61,7 @@ h4,
 a { color: $primary; }
 
 .basic-content {
-	
+
 }
 
 
@@ -61,13 +69,13 @@ a { color: $primary; }
 -------------------------------------------------------------------*/
 header.main {
 	.logo img { width: 125px; }
-	
-	ul.nav li a { 
-		display: inline-block; 
-		font-size: 16px; 
-		color: #333; 
+
+	ul.nav li a {
+		display: inline-block;
+		font-size: 16px;
+		color: #333;
 		padding: 10px;
-	} 
+	}
 }
 
 
@@ -79,7 +87,7 @@ header.main {
 
 .hero {
 	position: relative;
-	@include lg {		
+	@include lg {
 		display: flex;
 		align-items: center;
 	}
@@ -130,14 +138,14 @@ header.main {
 
 /* Single Post
 -------------------------------------------------------------------*/
-.social-share { 
-	margin: 0 0 20px 0; 
-	a { 
-		font-size: 28px; 
-		color: #333; 
-		margin-left: 8px; 
-		position: relative; 
-		top: 4px; 
+.social-share {
+	margin: 0 0 20px 0;
+	a {
+		font-size: 28px;
+		color: #333;
+		margin-left: 8px;
+		position: relative;
+		top: 4px;
 	}
 	a:hover { text-decoration: none; opacity: .7; }
 	.social-share-text { font-size: 15px; }
@@ -162,8 +170,8 @@ header.main {
 /* Footer
 -------------------------------------------------------------------*/
 footer.main {
-	.copyright { 
-		font-size: 12px; 
+	.copyright {
+		font-size: 12px;
 		a { text-decoration: underline; }
 	}
 }

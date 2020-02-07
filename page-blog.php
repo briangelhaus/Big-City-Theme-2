@@ -37,7 +37,7 @@
 							<?php if($featuredImage): ?>
 								<img class="img-fluid" src="<?php echo $featuredImageURL; ?>" alt="<?php echo $p->post_title; ?>">
 							<?php else: ?>
-								<img class="img-fluid" src="http://placehold.it/600x450"></a>
+								<img class="img-fluid" src="http://placehold.it/600x450">
 							<?php endif; ?>
 							<h2 class="fs4"><?php echo $p->post_title; ?></h2>
 						</a>

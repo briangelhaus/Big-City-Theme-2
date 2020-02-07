@@ -115,3 +115,28 @@ function child_manage_woocommerce_styles() {
         }
     }
  }
+ 
+ 
+ // edit woocommerce admin orders - add purchase products column
+add_filter('manage_edit-shop_order_columns', 'bigcity_order_items_column' );
+function bigcity_order_items_column( $order_columns ) {
+    $order_columns['order_products'] = "Purchased products";
+    return $order_columns;
+}
+
+// edit woocommerce admin orders - show products that the user ordered
+add_action( 'manage_shop_order_posts_custom_column' , 'bigcity_order_items_column_cnt' );
+function bigcity_order_items_column_cnt( $colname ) {
+	global $the_order; // the global order object
+ 	if( $colname == 'order_products' ) {
+		// get items from the order global object
+		$order_items = $the_order->get_items();
+		if ( !is_wp_error( $order_items ) ) {
+			foreach( $order_items as $order_item ) {
+ 				echo $order_item['quantity'] .' × <a href="' . admin_url('post.php?post=' . $order_item['product_id'] . '&action=edit' ) . '">'. $order_item['name'] .'</a><br />';
+				// you can also use $order_item->variation_id parameter
+				// by the way, $order_item['name'] will display variation name too
+			}
+		}
+	}
+}
