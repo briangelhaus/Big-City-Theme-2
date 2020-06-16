@@ -50,13 +50,6 @@ function bigcity_remove_columns() {
 }
 add_action( 'admin_init' , 'bigcity_remove_columns' );
 
-// remove help videos to save load time
-function remove_help($old_help, $screen_id, $screen){
-    $screen->remove_help_tabs();
-    return $old_help;
-}
-add_filter( 'contextual_help', 'remove_help', 999, 3 );
-
 // edit the order complete thank you page text
 add_filter('woocommerce_thankyou_order_received_text', 'woo_change_order_received_text', 10, 2 );
 function woo_change_order_received_text( $thank_yout_text, $order ) {
@@ -130,6 +123,30 @@ function bigcity_order_items_column_cnt( $colname ) {
 	global $the_order; // the global order object
  	if( $colname == 'order_products' ) {
 		// get items from the order global object
+		$order_items = $the_order->get_items();
+		if ( !is_wp_error( $order_items ) ) {
+			foreach( $order_items as $order_item ) {
+ 				echo $order_item['quantity'] .' × <a href="' . admin_url('post.php?post=' . $order_item['product_id'] . '&action=edit' ) . '">'. $order_item['name'] .'</a><br />';
+				// you can also use $order_item->variation_id parameter
+				// by the way, $order_item['name'] will display variation name too
+			}
+		}
+	}
+}
+
+
+// edit woocommerce admin orders list view - add new column for purchased products
+add_filter('manage_edit-shop_order_columns', 'add_order_items_column' );
+function add_order_items_column( $order_columns ) {
+    $order_columns['order_products'] = "Purchased products";
+    return $order_columns;
+}
+
+// edit woocommerce admin orders list view - show product data
+add_action( 'manage_shop_order_posts_custom_column' , 'add_order_items_column_cnt' );
+function add_order_items_column_cnt( $colname ) {
+	global $the_order;
+ 	if( $colname == 'order_products' ) {
 		$order_items = $the_order->get_items();
 		if ( !is_wp_error( $order_items ) ) {
 			foreach( $order_items as $order_item ) {

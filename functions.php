@@ -65,20 +65,9 @@ function bigcity_custom_admin_css() { ?>
         #client_help .inside p,
         #client_help .inside li { font-size: 14px; }
         #client_help .inside a { text-decoration: underline; }
-
-        /* make nav menus box bigger */
-        .posttypediv div.tabs-panel { max-height: 800px !important; }
-
-        /* hide post categories */
-/*
-        #categorydiv,
-        .column-categories { display: none; }
-*/
-        /* hide post tags - linked with "my_remove_sub_menus" below */
-/*
-        #tagsdiv-post_tag,
-        .column-tags { display: none; }
-*/
+        
+        /* gutenburg styles */
+        .wp-block { max-width: 1100px; }
     </style>
 <?php }
 add_action( 'admin_head', 'bigcity_custom_admin_css' );
