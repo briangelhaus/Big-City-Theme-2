@@ -274,7 +274,8 @@ body.mce-content-body { font-family: Helvetica, Arial; }
 .woocommerce-order-overview { padding: 0; }
 .woocommerce-variation { margin-bottom: 10px; }
 .woocommerce-checkout-payment .place-order input { font-size: 22px; }
-
+.single-product form.cart { display: flex; }
+.single-product form.cart .quantity { margin-right: 5px; }
 
 /* gravity forms
 -------------------------------------------------------------------*/
