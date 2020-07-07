@@ -26,7 +26,7 @@
     "node-minify": "^2.0.3",
     "node-sass": "^4.13.1",
     "nodemon": "^1.19.4",
-    "npm": "^5.6.0",
+    "npm": "^6.14.6",
     "onchange": "^3.2.1",
     "postcss": "^5.2.12",
     "postcss-cli": "^2.6.0",
