@@ -157,3 +157,15 @@ function add_order_items_column_cnt( $colname ) {
 		}
 	}
 }
+
+
+/*
+// change out of stock notification email
+add_filter( 'woocommerce_email_recipient_backorder', 'change_stock_email_recipient', 10, 2 ); // For Backorders notification
+add_filter( 'woocommerce_email_recipient_low_stock', 'change_stock_email_recipient', 10, 2 ); // For Low stock notification
+add_filter( 'woocommerce_email_recipient_no_stock', 'change_stock_email_recipient', 10, 2 ); // For No stock notification
+function change_stock_email_recipient( $recipient, $product ) {
+    $recipient = 'brian@primaxstudio.com';
+    return $recipient;
+}
+*/

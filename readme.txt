@@ -21,13 +21,13 @@ NPM
 - remove package-gulp.json
 - change CHANGE.local.com to your url in package.json
 - terminal to your theme folder
-- type "npm install" in terminal to install all dependencies requires in the package.json file
+- type "npm install" in terminal to install all dependencies required
 - type "npm run dev" 
 
 GIT
 - terminal to your theme folder
 - git init
-- create .gitignore file and add node_modules and .DS_Store
+- create .gitignore file and add node_modules, .DS_Store, css/main.css
 - git add .
 - git commit -m "first"
 - Create repo at https://bitbucket.org/
@@ -41,19 +41,6 @@ SLACK with GIT
 	- /bitbucket connect https://name@bitbucket.org/company/project-name.git
 - create subscription
 - git push to test it works
-
-
-GULP
-- remove package-npm.json
-- terminal to your theme folder
-- type "npm install" in terminal to install all dependencies requires in the package-gulp.json file
-- change your proxy url in the gulpfile.js
-- type "gulp" in terminal to run browser sync
-
-
-NO GULP?
-1- remove the package.json file
-2- remove the gulpfile.js
 
 
 SECURITY
