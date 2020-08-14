@@ -278,3 +278,10 @@ function jp_block_editor_settings( $editor_settings, $post ) {
 	return $editor_settings;
 }
 */
+
+
+// Disable auto-update email notifications for plugins. Started in Wordpress 5.5
+add_filter( 'auto_plugin_update_send_email', '__return_false' );
+ 
+// Disable auto-update email notifications for themes. Started in Wordpress 5.5
+add_filter( 'auto_theme_update_send_email', '__return_false' );
