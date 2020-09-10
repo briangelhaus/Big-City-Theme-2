@@ -286,9 +286,6 @@ add_filter( 'auto_plugin_update_send_email', '__return_false' );
 // disable auto-update email notifications for themes. Started in Wordpress 5.5
 add_filter( 'auto_theme_update_send_email', '__return_false' );
 
-// disable emails for user password changes
-add_filter( 'send_password_change_email', '__return_false' );
-
 // disable XML-RPC which started to be enabled by default in WordPress 3.5
 // if you want to access and publish to your blog remotely, then you need XML-RPC enabled
 add_filter('xmlrpc_enabled', '__return_false');
