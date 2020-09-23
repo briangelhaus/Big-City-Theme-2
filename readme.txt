@@ -27,11 +27,14 @@ NPM
 GIT
 - terminal to your theme folder
 - git init
-- create .gitignore file and add node_modules, .DS_Store, css/main.css
+- create .gitignore file and add "node_modules", ".DS_Store", "css/main.css"
 - git add .
 - git commit -m "first"
-- Create repo at https://bitbucket.org/
-- run the 2 commands they give you for an existing project (git remote add origin and git push)
+- create repo at https://bitbucket.org/
+- git remote add origin https://YOUR_USERNAME@bitbucket.org/primax/PROJECT.git
+- git pull origin master --allow-unrelated-histories
+- go to .gitignore and fix merge conflict
+- git push --set-upstream origin master
 
 
 SLACK with GIT
